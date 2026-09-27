@@ -1,0 +1,192 @@
+
+/* Nexus Robotics — global theme and direction layer */
+html{scroll-behavior:smooth}
+body{transition:background-color .3s ease,color .3s ease}
+
+/* ═══ LIGHT THEME (default) ═══ */
+:root {
+  --nxc-background: #f0f2f8;
+  --nxc-error: #ba1a1a;
+  --nxc-error-container: #ffdad6;
+  --nxc-inverse-on-surface: #eff0f9;
+  --nxc-inverse-primary: #00dbe9;
+  --nxc-inverse-surface: #2e3139;
+  --nxc-on-background: #0e1117;
+  --nxc-on-error: #ffffff;
+  --nxc-on-error-container: #410002;
+  --nxc-on-primary: #ffffff;
+  --nxc-on-primary-container: #ffffff;
+  --nxc-on-primary-fixed: #001f24;
+  --nxc-on-primary-fixed-variant: #004f58;
+  --nxc-on-secondary: #ffffff;
+  --nxc-on-secondary-container: #ffffff;
+  --nxc-on-secondary-fixed: #3f0017;
+  --nxc-on-secondary-fixed-variant: #90003d;
+  --nxc-on-surface: #111318;
+  --nxc-on-surface-variant: #333d3e;
+  --nxc-on-tertiary: #ffffff;
+  --nxc-on-tertiary-container: #ffffff;
+  --nxc-on-tertiary-fixed: #002110;
+  --nxc-on-tertiary-fixed-variant: #00522e;
+  --nxc-outline: #3a4546;
+  --nxc-outline-variant: #788a8b;
+  --nxc-primary: #005a62;
+  --nxc-primary-container: #006872;
+  --nxc-primary-fixed: #9cf0ff;
+  --nxc-primary-fixed-dim: #00889a;
+  --nxc-secondary: #a10048;
+  --nxc-secondary-container: #d40058;
+  --nxc-secondary-fixed: #ffd9df;
+  --nxc-secondary-fixed-dim: #ff8da2;
+  --nxc-surface: #f0f2f8;
+  --nxc-surface-bright: #f0f2f8;
+  --nxc-surface-container: #e4e7f0;
+  --nxc-surface-container-high: #dadde7;
+  --nxc-surface-container-highest: #d0d4de;
+  --nxc-surface-container-low: #eaecf5;
+  --nxc-surface-container-lowest: #ffffff;
+  --nxc-surface-dim: #c8ccd6;
+  --nxc-surface-tint: #005a62;
+  --nxc-surface-variant: #c4cdce;
+  --nxc-tertiary: #005a38;
+  --nxc-tertiary-container: #007a4c;
+  --nxc-tertiary-fixed: #57ffa7;
+  --nxc-tertiary-fixed-dim: #009e60;
+}
+
+/* ═══ DARK THEME ═══ */
+.dark {
+  --nxc-background: #0f131c;
+  --nxc-error: #ffb4ab;
+  --nxc-error-container: #93000a;
+  --nxc-inverse-on-surface: #2c303a;
+  --nxc-inverse-primary: #006970;
+  --nxc-inverse-surface: #dfe2ef;
+  --nxc-on-background: #dfe2ef;
+  --nxc-on-error: #690005;
+  --nxc-on-error-container: #ffdad6;
+  --nxc-on-primary: #00363a;
+  --nxc-on-primary-container: #006970;
+  --nxc-on-primary-fixed: #002022;
+  --nxc-on-primary-fixed-variant: #004f54;
+  --nxc-on-secondary: #660029;
+  --nxc-on-secondary-container: #fff6f6;
+  --nxc-on-secondary-fixed: #3f0017;
+  --nxc-on-secondary-fixed-variant: #90003d;
+  --nxc-on-surface: #dfe2ef;
+  --nxc-on-surface-variant: #b9cacb;
+  --nxc-on-tertiary: #00391f;
+  --nxc-on-tertiary-container: #006d3f;
+  --nxc-on-tertiary-fixed: #002110;
+  --nxc-on-tertiary-fixed-variant: #00522e;
+  --nxc-outline: #849495;
+  --nxc-outline-variant: #3b494b;
+  --nxc-primary: #dbfcff;
+  --nxc-primary-container: #00f0ff;
+  --nxc-primary-fixed: #7df4ff;
+  --nxc-primary-fixed-dim: #00dbe9;
+  --nxc-secondary: #ffb1c0;
+  --nxc-secondary-container: #e00363;
+  --nxc-secondary-fixed: #ffd9df;
+  --nxc-secondary-fixed-dim: #ffb1c0;
+  --nxc-surface: #0f131c;
+  --nxc-surface-bright: #353943;
+  --nxc-surface-container: #1c1f29;
+  --nxc-surface-container-high: #262a34;
+  --nxc-surface-container-highest: #31353f;
+  --nxc-surface-container-low: #181b25;
+  --nxc-surface-container-lowest: #0a0e17;
+  --nxc-surface-dim: #0f131c;
+  --nxc-surface-tint: #00dbe9;
+  --nxc-surface-variant: #31353f;
+  --nxc-tertiary: #d8ffe1;
+  --nxc-tertiary-container: #4af59e;
+  --nxc-tertiary-fixed: #57ffa7;
+  --nxc-tertiary-fixed-dim: #2ce28d;
+}
+
+/* Smooth transitions for theme switch */
+header, footer, main, section, nav, div, span, a, p, h1, h2, h3, h4, h5, h6, button, input, textarea, select {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* RTL support */
+html[dir="rtl"] body{direction:rtl}
+html[dir="rtl"] .text-left{text-align:right!important}
+html[dir="rtl"] .text-right{text-align:left!important}
+html[dir="rtl"] input,html[dir="rtl"] textarea{text-align:right}
+
+/* ═══ ALWAYS-DARK NAVBAR ═══ */
+/* The header always uses dark-palette colors so it looks consistent
+   across all pages, matching the Home 1 glassmorphism-over-dark look. */
+header {
+  background: rgba(15, 19, 28, 0.92) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom-color: rgba(59, 73, 75, 0.6) !important;
+}
+
+/* Brand text */
+header .text-on-surface,
+header .group-hover\:text-primary:hover {
+  color: #dfe2ef !important;
+}
+
+/* Nav links */
+header .text-on-surface-variant {
+  color: #b9cacb !important;
+}
+header .hover\:text-on-surface:hover,
+header a:hover .text-on-surface-variant {
+  color: #dfe2ef !important;
+}
+
+/* Outline / subtitle text */
+header .text-outline {
+  color: #849495 !important;
+}
+
+/* Dropdown menu */
+header .bg-surface-container {
+  background-color: #1c1f29 !important;
+}
+header .border-outline-variant {
+  border-color: rgba(59, 73, 75, 0.6) !important;
+}
+header .hover\:bg-surface-container-high:hover {
+  background-color: #262a34 !important;
+}
+header .hover\:text-primary:hover {
+  color: #dbfcff !important;
+}
+
+/* Toggle buttons */
+header button.bg-surface-container,
+header button .bg-surface-container {
+  background-color: #1c1f29 !important;
+}
+header button:hover.hover\:bg-surface-container-high,
+header button.hover\:bg-surface-container-high:hover {
+  background-color: #262a34 !important;
+}
+header button .text-on-surface-variant,
+header button.text-on-surface-variant {
+  color: #b9cacb !important;
+}
+
+/* Submit RFQ button */
+header .bg-primary-container {
+  background-color: #00f0ff !important;
+}
+header .text-on-primary-container {
+  color: #006970 !important;
+}
+
+/* User avatar */
+header .bg-primary {
+  background-color: #dbfcff !important;
+}
+header .text-on-primary {
+  color: #00363a !important;
+}
+

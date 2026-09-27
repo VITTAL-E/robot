@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Sora:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"var(--nxc-on-tertiary-fixed-variant)","on-secondary-fixed-variant":"var(--nxc-on-secondary-fixed-variant)","on-secondary-container":"var(--nxc-on-secondary-container)","on-error":"var(--nxc-on-error)","error":"var(--nxc-error)","on-secondary-fixed":"var(--nxc-on-secondary-fixed)","inverse-on-surface":"var(--nxc-inverse-on-surface)","on-error-container":"var(--nxc-on-error-container)","tertiary-fixed-dim":"var(--nxc-tertiary-fixed-dim)","tertiary-fixed":"var(--nxc-tertiary-fixed)","surface-container-high":"var(--nxc-surface-container-high)","outline-variant":"var(--nxc-outline-variant)","primary-container":"var(--nxc-primary-container)","secondary-container":"var(--nxc-secondary-container)","on-surface":"var(--nxc-on-surface)","secondary":"var(--nxc-secondary)","on-tertiary-container":"var(--nxc-on-tertiary-container)","primary-fixed-dim":"var(--nxc-primary-fixed-dim)","surface-container-highest":"var(--nxc-surface-container-highest)","inverse-primary":"var(--nxc-inverse-primary)","surface-tint":"var(--nxc-surface-tint)","primary":"var(--nxc-primary)","tertiary":"var(--nxc-tertiary)","on-primary-container":"var(--nxc-on-primary-container)","surface-variant":"var(--nxc-surface-variant)","surface-container":"var(--nxc-surface-container)","on-tertiary-fixed":"var(--nxc-on-tertiary-fixed)","outline":"var(--nxc-outline)","on-background":"var(--nxc-on-background)","background":"var(--nxc-background)","on-surface-variant":"var(--nxc-on-surface-variant)","tertiary-container":"var(--nxc-tertiary-container)","secondary-fixed":"var(--nxc-secondary-fixed)","surface-container-low":"var(--nxc-surface-container-low)","surface":"var(--nxc-surface)","on-primary-fixed":"var(--nxc-on-primary-fixed)","surface-dim":"var(--nxc-surface-dim)","inverse-surface":"var(--nxc-inverse-surface)","on-tertiary":"var(--nxc-on-tertiary)","on-secondary":"var(--nxc-on-secondary)","secondary-fixed-dim":"var(--nxc-secondary-fixed-dim)","surface-container-lowest":"var(--nxc-surface-container-lowest)","on-primary":"var(--nxc-on-primary)","on-primary-fixed-variant":"var(--nxc-on-primary-fixed-variant)","error-container":"var(--nxc-error-container)","surface-bright":"var(--nxc-surface-bright)","primary-fixed":"var(--nxc-primary-fixed)"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"3rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","gutter-mobile":"0.75rem"},"fontFamily":{"mono-spec-sm":["JetBrains Mono"],"mono-spec-lg":["JetBrains Mono"],"headline-lg-mobile":["Sora"],"display-xl-mobile":["Sora"],"body-md":["Inter"],"headline-sm":["Sora"],"body-lg":["Inter"],"headline-lg":["Sora"],"body-sm":["Inter"],"headline-md":["Sora"],"display-xl":["Sora"],"mono-spec-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"]},"fontSize":{"mono-spec-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"mono-spec-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"mono-spec-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"label-caps":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"700"}]}}}}</script><link href="assets/site-global.css" rel="stylesheet"/>
+
+
+<link rel="icon" type="image/png" href="assets/favicon-dark.png"/>
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant"><div class="h-20 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-md group" data-path="home-automation-projects" href="#"><img alt="Nexus Robotics Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSfUKwrmYyvHZq5SISwmcQhwwjD0mudNku996G5Fpbq5D_titFIcxjk-Rkby9ntmafEzJ65rwkMvUqYTq4AG4LZEwHSWxs7JVkEw0HTymLhXul2BRFin8pFqInXx3debuvlX4Gotp6zqwGUbNwc8ZVm8ZLgrcsuQ9roe9HvgJRWvM8vT52B4MIXLd70zgxUFdNsXz-h8ODVfN2eQMkcBpt_OhMSektMmWj_nzevPPhbGTX96A9OaKJwG4V"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors">NEXUS ROBOTICS</span><span class="font-label-caps text-label-caps uppercase text-outline">Precision Automation Systems</span></div></a></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-medium"><div class="relative group"><button class="flex items-center gap-space-xs px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors"><span>Home</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="absolute left-0 top-full hidden group-hover:flex flex-col w-64 bg-surface-container border border-outline-variant shadow-2xl py-space-xs z-50"><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" data-path="home-automation-projects" href="#">Home 1: Automation Projects</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" data-path="home-turnkey-robotics" href="#">Home 2: Turnkey Robotics</a></div></div><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="case-studies" href="#">Case Studies</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="industries-served" href="#">Industries Served</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="tech-specs-and-lab" href="#">Tech Specs &amp; Lab</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-and-rfq" href="#">Contact &amp; RFQ</a></nav><div class="flex items-center gap-space-md"><button aria-label="Toggle RTL" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all duration-200 border border-outline-variant/40" id="rtl-toggle" onclick="toggleRTL()" title="Toggle RTL"><span class="material-symbols-outlined text-on-surface-variant text-[18px]" id="rtl-icon">language</span></button><button aria-label="Toggle Theme" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all duration-200 border border-outline-variant/40" id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme"><span class="material-symbols-outlined text-on-surface-variant text-[18px]" id="theme-icon">dark_mode</span></button><a class="relative inline-flex items-center justify-center px-space-lg py-space-sm bg-primary-container text-on-primary-container font-mono-spec-sm text-mono-spec-sm uppercase font-bold tracking-wider hover:bg-on-surface hover:text-surface-container-lowest transition-all duration-200 border-none" data-path="contact-and-rfq" href="#"><span class="relative z-10">Submit RFQ</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="dark relative w-full overflow-hidden bg-surface-container-lowest">
+<!-- Atmospheric Ambient Glows & Tech Grid -->
+<div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#00e5ff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="absolute -top-40 right-1/4 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="w-full px-gutter py-space-xl relative z-10">
+<!-- Sector Identifier Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs border-l-2 border-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-mono-spec-sm text-mono-spec-sm uppercase text-primary tracking-widest">ARCHITECTURE // SERIES-9 DEPLOYMENT READY</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-label-caps text-label-caps uppercase text-outline">LATENCY: 0.8ms</span>
+<span class="text-outline">/</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary">ISO 13849-1 PLe CAT 4</span>
+<span class="text-outline">/</span>
+<span class="font-label-caps text-label-caps uppercase text-primary">RIA R15.06-2012 COMPLIANT</span>
+</div>
+</div>
+<!-- Hero Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text Column -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-sm">
+<span class="font-mono-spec-md text-mono-spec-md text-primary-container font-semibold uppercase tracking-widest">
+              [ SEC_01 // KINEMATIC INTEGRATION SUITE ]
+            </span>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight leading-tight">
+              Turnkey Robotic Systems &amp; Custom Automation Architecture
+            </h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            From kinematic simulation to shop-floor commissioning. Engineered workcells built for continuous 24/7 autonomous production with zero unplanned downtime.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md bg-primary-container text-on-primary-container font-mono-spec-md text-mono-spec-md uppercase font-bold tracking-wider hover:bg-on-surface hover:text-surface-container-lowest transition-all shadow-[0_0_24px_-4px_rgba(0,229,255,0.4)]" data-path="contact-and-rfq" href="#">
+<span>Configure Workcell Architecture</span>
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md bg-surface-container-high text-on-surface font-mono-spec-md text-mono-spec-md uppercase font-semibold hover:bg-surface-bright transition-colors" data-path="services" href="#">
+<span>Request Virtual Demo / Line Audit</span>
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+</a>
+</div>
+<!-- Telemetry Live Strip -->
+<div class="mt-space-md p-space-md bg-surface-container-low grid grid-cols-3 gap-space-md border-t-2 border-outline-variant">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">CONTROLLER LATENCY</span>
+<span class="font-mono-spec-lg text-mono-spec-lg text-primary font-bold mt-space-xs">0.8 ms</span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-outline-variant">Determinism ±12µs</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">SYNCHRONIZED AXES</span>
+<span class="font-mono-spec-lg text-mono-spec-lg text-on-surface font-bold mt-space-xs">Up to 32</span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-outline-variant">CIP Sync / IRT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">FIELD MTBF</span>
+<span class="font-mono-spec-lg text-mono-spec-lg text-secondary font-bold mt-space-xs">85,000+ Hrs</span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-outline-variant">Mil-Spec Stress Rated</span>
+</div>
+</div>
+</div>
+<!-- Visual Hero Media Panel -->
+<div class="lg:col-span-6 relative">
+<div class="relative bg-surface-container overflow-hidden shadow-2xl">
+<!-- Header Tag Inside Frame -->
+<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container-highest">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-on-surface uppercase">CELL_REC_FEED // CAMERA_01_FEED</span>
+</div>
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary uppercase">FPS: 120.0 | ISO CLEANROOM 4</span>
+</div>
+<!-- Hero Image with Telemetry Grid Overlay -->
+<div class="relative h-[480px] w-full">
+<img class="w-full h-full object-cover" data-alt="High precision delta robot arm moving rapidly over high tech printed circuit boards inside cleanroom enclosure with intense cold blue and cyan industrial LED illumination, carbon fiber robot linkages, transparent polycarbonate shielding, micro coordinate telemetry indicators on frame, and industrial automation conveyor belts." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfe_xPE855mwLN580zc5JgW3P-dLk92M14fqU-ncdG1pZHkdABlQVYRJD9QFiQWHi4I6O4Zo87KBcjpsGy1ZJBeXd0sUI55tmUEmdl5GOji_BrMMTKwgbxQx9JQEzLUyX1SWasXOLkU1dcbiM8u3YQp2L-EXopNN8xgzl5J7oDJF8KdpY5qfsgb2cfixtIpPVGeHaQ0fp2_1w6wPLlPVsRN7XmxdgnWVwazihhQGfHTanKpUm6ucvSSA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<!-- Reticle HUD Elements -->
+<div class="absolute top-6 left-6 p-space-sm bg-surface-container-lowest/80 backdrop-blur-sm">
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary">ACTUATOR_POS: X+412.39 Y-108.12 Z-88.04</span>
+</div>
+<div class="absolute bottom-6 right-6 p-space-sm bg-surface-container-lowest/90 backdrop-blur-sm flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-on-surface">DELTA-X DYNAMIC TRACKING // STABLE</span>
+</div>
+</div>
+<!-- Sub-panel diagnostic readout bar -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between font-mono-spec-sm text-mono-spec-sm text-on-surface-variant">
+<span>WORKCELL ID: NX-WC-9042</span>
+<span>PAYLOAD CAP: 8.5 KG</span>
+<span class="text-primary">REPEATED ACCURACY: ±0.015 MM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: WORKCELL TAXONOMY MATRIX QUICK VIEW -->
+<section class="w-full bg-surface py-space-xl">
+<div class="w-full px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-mono-spec-sm text-mono-spec-sm uppercase text-primary tracking-widest">MODULAR WORKCELL CLASSES</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-space-xs">Standardized High-Throughput Kinematic Enclosures</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Pre-validated mechanical structures and control racks engineered for drop-in deployment with turnkey factory floor interconnects.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Class 1 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary uppercase">CLASS: ALPHA // 6-AXIS ARTICULATED</span>
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Ultra-Duty Stamping &amp; Weld Cell</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              High-payload kinematic architecture rated up to 600kg. Heavy metallurgy integration with adaptive weld seam tracking and laser profiling.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/50 p-space-sm flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<div class="flex justify-between text-on-surface-variant"><span>ENVELOPE RADIUS:</span><span class="text-on-surface">3,100 mm</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>REPEATABILITY:</span><span class="text-primary">±0.04 mm</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>CYCLE FACTOR:</span><span class="text-secondary">42 PPM</span></div>
+</div>
+</div>
+<!-- Class 2 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary-container uppercase">CLASS: DELTA-PARALLEL // SCARA</span>
+<span class="material-symbols-outlined text-[20px]">conveyor_belt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">High-Speed SMT &amp; Vision Cell</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Ultra-rapid multi-axis parallel kinematics designed for electronics assembly, micro-dispensing, and 100% inline optical metrology.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/50 p-space-sm flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<div class="flex justify-between text-on-surface-variant"><span>ENVELOPE RADIUS:</span><span class="text-on-surface">1,200 mm</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>REPEATABILITY:</span><span class="text-primary">±0.008 mm</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>CYCLE FACTOR:</span><span class="text-secondary">240 PPM</span></div>
+</div>
+</div>
+<!-- Class 3 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-outline">
+<span class="font-mono-spec-sm text-mono-spec-sm text-secondary uppercase">CLASS: HYBRID COBOT // MOBILE BASE</span>
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Collaborative Machine Tending Cell</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Force-limited kinematics paired with autonomous laser navigation base for dynamic CNC tending, press feeding, and mobile inventory feed.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/50 p-space-sm flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<div class="flex justify-between text-on-surface-variant"><span>SLAM ACCURACY:</span><span class="text-on-surface">±2.0 mm</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>FORCE COMPLIANCE:</span><span class="text-primary">ISO/TS 15066</span></div>
+<div class="flex justify-between text-on-surface-variant"><span>BATTERY RUNTIME:</span><span class="text-secondary">14.5 Hrs</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DIGITAL TWIN & KINEMATIC SIMULATION LAB (Unique Module 3) -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="w-full px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-mono-spec-sm text-mono-spec-sm uppercase">
+<span class="material-symbols-outlined text-[16px]">view_in_ar</span>
+<span>SIMULATION MODULE // ZERO PHYSICAL RISK</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Digital Twin &amp; Kinematic Simulation Lab
+          </h2>
+</div>
+<div class="bg-surface-container p-space-md flex items-center gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-outline uppercase">VERIFIED CORRELATION RATIO</span>
+<span class="font-mono-spec-lg text-mono-spec-lg text-primary font-bold">99.82% SIM-TO-REAL</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">verified</span>
+</div>
+</div>
+<!-- Simulation Viewport & Analytics Cockpit -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Interactive Mockup & 3D Render Window -->
+<div class="lg:col-span-8 bg-surface-container-low flex flex-col">
+<!-- Window Toolbar -->
+<div class="bg-surface-container-high px-space-md py-space-xs flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-mono-spec-sm text-mono-spec-sm uppercase font-bold">CAD_KIN_ENGINE // NX_SIMULATOR_V4.8</span>
+</div>
+<div class="flex items-center gap-space-md font-mono-spec-sm text-mono-spec-sm">
+<span class="text-outline">LAYER: COLLISION_MESH_ACTIVE</span>
+<span class="text-primary">GRAVITY: 9.80665 m/s²</span>
+</div>
+</div>
+<!-- Graphic Viewport Simulated -->
+<div class="relative h-[420px] w-full bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Technical digital twin simulation interface depicting a 6-axis industrial robot arm within a virtual wireframe cell enclosure, colored collision heatmap gradient lines showing kinetic motion velocity trajectories, cyan vector arcs, and telemetry HUD overlays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv7ij1_hS4u1ZGYtTbg6qt17fM_Bpd9LPDELtPEfJvhwJqRbn4t_hDGdo0WNGulGsY7vHksZ5GpQESuN43PoYpvkhYJiWD9PALVV1qjxJKTay8UCsfMiiKZSi05FcUi6J07nRShvaclqfhpnnkY-h9_0R7nCrgBuLkRDLMBoeyhROSs8m77bIYXX2-tmyuUIM4Xgsye7BIechvhlTNSQs82B9tU80Ip60pQUEpxj_56_SPlOJ9kG-IqA"/>
+<!-- Floating Reticle Overlays -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-60"></div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/85 backdrop-blur-md p-space-sm max-w-xs flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<span class="text-primary font-bold">KINEMATIC SINGULARITY CHECK</span>
+<span class="text-on-surface-variant">J3/J5 Clearance: 184.2 mm OK</span>
+<div class="w-full bg-surface-container-high h-1">
+<div class="bg-primary-container h-full w-[88%]"></div>
+</div>
+</div>
+<!-- Comparison Metric Floating Tag -->
+<div class="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-md font-mono-spec-sm text-mono-spec-sm">
+<span class="text-outline">SIMULATED CYCLE:</span>
+<span class="text-on-surface font-semibold">14.2s</span>
+</div>
+<div class="flex items-center justify-between gap-space-md font-mono-spec-sm text-mono-spec-sm">
+<span class="text-primary font-bold">COMMISSIONED CYCLE:</span>
+<span class="text-primary font-bold">13.9s</span>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs text-secondary font-mono-spec-sm text-mono-spec-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>-2.1% SPEEDUP (KINETIC TRAJECTORY TUNED)</span>
+</div>
+</div>
+</div>
+<!-- Simulation Timeline Controller -->
+<div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between font-mono-spec-sm text-mono-spec-sm text-on-surface-variant">
+<span>TIME CODE: 00:00:13.900</span>
+<span class="text-primary">PHASE 04: PALLET DISCHARGE &amp; INTERLOCK RELEASE</span>
+<span>100% PLAYBACK RATE</span>
+</div>
+<!-- Interactive Progress Bar Mock -->
+<div class="w-full bg-surface-container-highest h-2 relative cursor-pointer">
+<div class="bg-primary-container h-full w-[78%] relative">
+<div class="absolute right-0 -top-1 w-4 h-4 bg-on-surface transform rotate-45"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetry & Kinematic Analytics Panels -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Real-Time Curve / Sparkline Widget -->
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-sm text-mono-spec-sm text-on-surface font-bold uppercase">Torque Profile Curve [Nm]</span>
+<span class="font-label-caps text-label-caps text-primary uppercase">AXIS_02 PEAK</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<div class="w-full h-24 bg-surface-container-lowest p-space-xs flex items-end">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 200 60">
+<path d="M0,50 Q25,48 40,20 T70,30 T100,5 T130,40 T160,25 T200,45" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M0,50 Q25,48 40,20 T70,30 T100,5 T130,40 T160,25 T200,45 L200,60 L0,60 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+<div class="flex justify-between font-mono-spec-sm text-mono-spec-sm text-outline">
+<span>0.0s (REST)</span>
+<span>7.0s (MAX LOAD)</span>
+<span>13.9s (RETURN)</span>
+</div>
+</div>
+<!-- Collision Avoidance Heatmap Details -->
+<div class="bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-sm text-mono-spec-sm text-on-surface font-bold uppercase">Zone Interference Matrix</span>
+<span class="px-space-xs py-0.5 bg-surface-container-high text-primary font-mono-spec-sm text-mono-spec-sm">CLEAR</span>
+</div>
+<div class="grid grid-cols-4 gap-space-xs py-space-xs font-mono-spec-sm text-mono-spec-sm text-center">
+<div class="bg-surface-container-high p-space-xs text-on-surface">Z1: 0.0%</div>
+<div class="bg-surface-container-high p-space-xs text-on-surface">Z2: 1.2%</div>
+<div class="bg-surface-container-high p-space-xs text-secondary">Z3: 4.8%</div>
+<div class="bg-surface-container-high p-space-xs text-on-surface">Z4: 0.0%</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Continuous dynamic bounding volumes ensure zero interference with safety cage stanchions and human access airlocks.
+            </p>
+</div>
+<!-- Reachability Envelope Analysis -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-spec-sm text-mono-spec-sm text-on-surface font-bold uppercase">Reachability Optimization</span>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-xl text-display-xl text-primary font-bold">94.6%</span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-outline">Dexterous Workspace Efficiency</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Trajectory re-planning eliminated 3 joint singularities, dropping servo thermal accumulation by 18°C.
+              </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest p-space-sm flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-outline">ISO 9283 METHODOLOGY</span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-secondary font-bold">VERIFIED TEST LOG #841</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: END-OF-ARM TOOLING (EOAT) & GRIPPER TAXONOMY (Unique Module 4) -->
+<section class="w-full bg-surface py-space-xl">
+<div class="w-full px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-mono-spec-sm text-mono-spec-sm uppercase text-primary tracking-widest">[ EOAT_SYSTEMS // MODULE 04 ]</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-space-xs">
+            End-of-Arm Tooling &amp; Gripper Taxonomy Matrix
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Custom end-effectors engineered with quick-change couplings, integrated force/torque strain gauges, and pneumatic/electrical pass-throughs.
+        </p>
+</div>
+<!-- 4 Tooling Categories Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Category 1: Pneumatic & Servo -->
+<div class="bg-surface-container-low flex flex-col justify-between">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary uppercase">CAT_01 // SERVO-PNEUMATIC</span>
+<span class="material-symbols-outlined text-primary text-[24px]">tune</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Adaptive Parallel &amp; Servo Grippers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Closed-loop stroke position sensing, micro-force regulation up to 2500N, and interchangeable machinable finger sets for variable part geometry.
+            </p>
+<div class="bg-surface-container-lowest p-space-sm flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<div class="flex justify-between"><span class="text-outline">FORCE RANGE:</span><span class="text-on-surface">50N – 2,500N</span></div>
+<div class="flex justify-between"><span class="text-outline">REPEATABILITY:</span><span class="text-primary">±0.005 mm</span></div>
+<div class="flex justify-between"><span class="text-outline">FEEDBACK:</span><span class="text-secondary">IO-Link / CANopen</span></div>
+</div>
+</div>
+<div class="bg-surface-container-high px-space-lg py-space-sm font-label-caps text-label-caps text-on-surface uppercase flex justify-between items-center">
+<span>AUTOMOTIVE / MACHINING</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Category 2: Multi-Zone Vacuum -->
+<div class="bg-surface-container-low flex flex-col justify-between">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary uppercase">CAT_02 // VACUUM ARRAYS</span>
+<span class="material-symbols-outlined text-primary text-[24px]">filter_center_focus</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Multi-Zone Venturi Vacuum Arrays</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Multi-ejector vacuum generators with discrete zone shutoff. Non-marking silicone and polyurethane suction cups for solar wafer and automotive glass handling.
+            </p>
+<div class="bg-surface-container-lowest p-space-sm flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<div class="flex justify-between"><span class="text-outline">VACUUM LEVEL:</span><span class="text-on-surface">-85 kPa Max</span></div>
+<div class="flex justify-between"><span class="text-outline">ZONE CONTROL:</span><span class="text-primary">16 Discrete Sectors</span></div>
+<div class="flex justify-between"><span class="text-outline">AIR SAVING:</span><span class="text-secondary">Integrated E-Save</span></div>
+</div>
+</div>
+<div class="bg-surface-container-high px-space-lg py-space-sm font-label-caps text-label-caps text-on-surface uppercase flex justify-between items-center">
+<span>SOLAR / SHEET METAL / GLASS</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Category 3: Magnetic & Electro -->
+<div class="bg-surface-container-low flex flex-col justify-between">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-sm text-mono-spec-sm text-secondary uppercase">CAT_03 // ELECTROMAGNETIC</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">High-Flux Fail-Safe Magnetic Tools</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Electro-permanent rare-earth magnetic end-effectors requiring electrical power only during pick/release states. Total fail-safe adhesion during power blackout.
+            </p>
+<div class="bg-surface-container-lowest p-space-sm flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<div class="flex justify-between"><span class="text-outline">HOLDING FORCE:</span><span class="text-on-surface">Up to 8,000 N</span></div>
+<div class="flex justify-between"><span class="text-outline">POWER DUTY:</span><span class="text-primary">0.2s Pulse Switch</span></div>
+<div class="flex justify-between"><span class="text-outline">SHEAR FACTOR:</span><span class="text-secondary">Fail-Safe 4:1</span></div>
+</div>
+</div>
+<div class="bg-surface-container-high px-space-lg py-space-sm font-label-caps text-label-caps text-on-surface uppercase flex justify-between items-center">
+<span>HEAVY STAMPING / FOUNDRY</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Category 4: Compliant & Soft Robotics -->
+<div class="bg-surface-container-low flex flex-col justify-between">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary uppercase">CAT_04 // COMPLIANT SOFT</span>
+<span class="material-symbols-outlined text-primary text-[24px]">fingerprint</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Compliant &amp; Soft Biomimetic Grippers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Elastomeric fluidic actuators engineered for fragile, irregular, or sanitary handling. FDA-compliant silicone for pharmaceutical vials and clean food packaging.
+            </p>
+<div class="bg-surface-container-lowest p-space-sm flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm">
+<div class="flex justify-between"><span class="text-outline">PAYLOAD:</span><span class="text-on-surface">0.05 – 4.0 KG</span></div>
+<div class="flex justify-between"><span class="text-outline">CLEANROOM:</span><span class="text-primary">ISO Class 3 (10)</span></div>
+<div class="flex justify-between"><span class="text-outline">CONTACT FORCE:</span><span class="text-secondary">&lt; 0.5 N Soft Mode</span></div>
+</div>
+</div>
+<div class="bg-surface-container-high px-space-lg py-space-sm font-label-caps text-label-caps text-on-surface uppercase flex justify-between items-center">
+<span>BIOMEDICAL / PACKAGING</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CONTROLS ARCHITECTURE & FIELDBUS PROTOCOLS -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="w-full px-gutter">
+<!-- Section Title -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-mono-spec-sm text-mono-spec-sm uppercase text-primary tracking-widest">DETERMINISTIC NETWORKING &amp; CONTROL TOPOLOGY</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+          Controls Architecture &amp; Industrial Fieldbus Protocols
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Engineered for line-wide deterministic control, deterministic inter-cell safety handshake, and millisecond edge telemetry bridging to enterprise MES/SCADA.
+        </p>
+</div>
+<!-- Controls Matrix Breakdown -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Panel 1: PLC Architecture -->
+<div class="bg-surface-container-low p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">memory</span>
+<span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase">Controller Platform Specs</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Tier-1 dual-core and quad-core programmable automation controllers with embedded SIL 3 functional safety engines.
+          </p>
+<div class="flex flex-col gap-space-sm mt-space-sm font-mono-spec-sm text-mono-spec-sm">
+<div class="p-space-sm bg-surface-container flex flex-col gap-space-xs">
+<span class="text-on-surface font-bold">ALLEN-BRADLEY GUARDLOGIX 5580</span>
+<span class="text-outline">Dual Core 1.2GHz | 40MB User Memory | CIP Safety</span>
+<div class="flex justify-between text-outline-variant pt-space-xs">
+<span>I/O CAPACITY: 128,000</span>
+<span class="text-primary">SAFETY: SIL 3 / PLe</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container flex flex-col gap-space-xs">
+<span class="text-on-surface font-bold">SIEMENS SIMATIC S7-1500F SAFETY PLC</span>
+<span class="text-outline">Bit Processing: 10ns | PROFINET IRT Dual-Port</span>
+<div class="flex justify-between text-outline-variant pt-space-xs">
+<span>AXIS INTERPOLATION: 64</span>
+<span class="text-primary">SAFETY: IEC 62061</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container flex flex-col gap-space-xs">
+<span class="text-on-surface font-bold">BECKHOFF TWINCAT 3 IPC SYSTEM</span>
+<span class="text-outline">Intel Xeon Multi-Core | 50µs Real-Time Cycle Task</span>
+<div class="flex justify-between text-outline-variant pt-space-xs">
+<span>PROTOCOL: EtherCAT Master</span>
+<span class="text-secondary">PC-BASED CNC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 2: Fieldbus & Real-Time Protocols -->
+<div class="bg-surface-container-low p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+<span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase">Fieldbus Communications</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Deterministic fieldbus stacks running zero jitter communication between robots, drives, optical sensors, and I/O slices.
+          </p>
+<div class="flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm mt-space-sm">
+<!-- Row 1 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container">
+<span class="text-on-surface font-semibold">EtherNet/IP &amp; CIP Safety</span>
+<span class="text-primary">100 Mbps // 1.0ms RPI</span>
+</div>
+<!-- Row 2 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container">
+<span class="text-on-surface font-semibold">PROFINET IRT (Isochronous)</span>
+<span class="text-primary">&lt; 250 µs Cycle</span>
+</div>
+<!-- Row 3 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container">
+<span class="text-on-surface font-semibold">EtherCAT Master / Slave</span>
+<span class="text-primary">Sub-Microsecond Jitter</span>
+</div>
+<!-- Row 4 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container">
+<span class="text-on-surface font-semibold">OPC UA (IEC 62541)</span>
+<span class="text-secondary">SCADA / MES Secure M2M</span>
+</div>
+<!-- Row 5 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container">
+<span class="text-on-surface font-semibold">Modbus TCP / MQTT Sparkplug</span>
+<span class="text-outline">Edge Telemetry Broker</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm flex items-center justify-between mt-auto">
+<span class="font-label-caps text-label-caps text-outline uppercase">TOPOLOGY REDUNDANCY</span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary">DLR (Device Level Ring) / MRP</span>
+</div>
+</div>
+<!-- Panel 3: SCADA & HMI Software Integrations -->
+<div class="bg-surface-container-low p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+<span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase">HMI, Telemetry &amp; SCADA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            High-performance graphics interfaces built to ISA-101 standards, enabling rapid situational awareness and zero operator fatigue.
+          </p>
+<div class="flex flex-col gap-space-sm mt-space-sm font-mono-spec-sm text-mono-spec-sm">
+<div class="p-space-sm bg-surface-container">
+<div class="flex justify-between items-center mb-1">
+<span class="text-on-surface font-bold">IGNITION SCADA 8.1+</span>
+<span class="text-primary">ENTERPRISE SCALE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Full-stack web-based operator consoles with Perspective HTML5 modules, distributed audit trails, and automatic recipe engines.
+              </p>
+</div>
+<div class="p-space-sm bg-surface-container">
+<div class="flex justify-between items-center mb-1">
+<span class="text-on-surface font-bold">FACTORYTALK VIEW SE</span>
+<span class="text-primary">ROCKWELL CERTIFIED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Direct integration with PlantPAx distributed control systems, continuous alarm diagnostics, and CFR Part 11 electronic batch records.
+              </p>
+</div>
+<div class="p-space-sm bg-surface-container">
+<div class="flex justify-between items-center mb-1">
+<span class="text-on-surface font-bold">CUSTOM WEB HUD TELEMETRY</span>
+<span class="text-secondary">PROPRIETARY REACT/RUST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Ultra-low latency WebGL live kinematic visualizers streaming directly from on-cell edge gateways at 60 FPS over WebSockets.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: FAT PROTOCOL & COMMISSIONING TIMELINE -->
+<section class="w-full bg-surface py-space-xl">
+<div class="w-full px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-mono-spec-sm text-mono-spec-sm uppercase text-primary tracking-widest">[ DEPLOYMENT_CYCLE // FAT PROTOCOL ]</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-space-xs">
+            Rapid Commissioning &amp; Factory Acceptance Testing (FAT)
+          </h2>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-mono-spec-sm text-mono-spec-sm text-on-surface uppercase">ISO 9001:2015 AUDITED PROCEDURE</span>
+</div>
+</div>
+<!-- 4-Phase Chronological Track -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Phase 1 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-lg text-mono-spec-lg text-primary font-bold">PHASE 01</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">WEEK 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pre-Shipment Dry Runs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Full kinematic motion check under 100% simulated work loads without raw materials. Axis limit checks, backlash verification, and calibration laser checks.
+            </p>
+<ul class="flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm text-outline">
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>Zero-load motion paths</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>Tool center point (TCP) check</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>IO point-to-point mapping</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-xs border-t-2 border-outline-variant font-label-caps text-label-caps text-outline uppercase">
+            STATUS: CHECKPOINT PASS
+          </div>
+</div>
+<!-- Phase 2 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-lg text-mono-spec-lg text-primary font-bold">PHASE 02</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">WEEK 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">72-Hour Burn-In Stress Test</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Non-stop continuous autonomous execution at 105% designed operational speed. Thermal profiling of drives, bearings, and pneumatic manifolds.
+            </p>
+<ul class="flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm text-outline">
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>Thermal IR camera audits</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>Zero MTBF faults tolerated</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>Pneumatic pressure drop logging</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-xs border-t-2 border-outline-variant font-label-caps text-label-caps text-primary uppercase">
+            STATUS: ACTIVE BURN-IN
+          </div>
+</div>
+<!-- Phase 3 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-lg text-mono-spec-lg text-primary font-bold">PHASE 03</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">WEEK 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Safety Laser Validation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Independent safety verification of area laser scanners, light curtains, emergency stop delays, and interlocked perimeter access gates.
+            </p>
+<ul class="flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm text-outline">
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>Scanner muting field audits</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>Braking distance calculations</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[14px]">check</span>
+<span>ISO 13849-2 validation report</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-xs border-t-2 border-outline-variant font-label-caps text-label-caps text-outline uppercase">
+            STATUS: QUEUED
+          </div>
+</div>
+<!-- Phase 4 -->
+<div class="bg-surface-container-low p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-mono-spec-lg text-mono-spec-lg text-secondary font-bold">PHASE 04</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">WEEK 04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Client Sign-Off &amp; Handover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Full production trial with actual customer components. Complete documentation package: mechanical CAD, EPLAN electrical schematics, and operator manuals.
+            </p>
+<ul class="flex flex-col gap-space-xs font-mono-spec-sm text-mono-spec-sm text-outline">
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[14px]">check</span>
+<span>Cpk ≥ 1.67 capability check</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[14px]">check</span>
+<span>Maintenance staff training</span>
+</li>
+<li class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[14px]">check</span>
+<span>Official FAT sign-off certificate</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-xs border-t-2 border-outline-variant font-label-caps text-label-caps text-secondary uppercase">
+            STATUS: FORMAL HANDOVER
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- CALL TO ACTION PANEL -->
+<section class="w-full bg-surface-container-lowest py-space-xl relative overflow-hidden">
+<div class="w-full px-gutter">
+<div class="bg-surface-container p-space-xl relative overflow-hidden">
+<!-- Background Accents -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<span class="font-mono-spec-sm text-mono-spec-sm text-primary uppercase font-bold tracking-widest">
+              [ READY FOR TURNKEY FABRICATION ]
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+              Request Your Workcell Architecture &amp; Cycle Simulation
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+              Send our senior systems engineering team your CAD assemblies, required cycle rates, and factory footprint bounds. Receive a preliminary 3D kinematic study within 5 business days.
+            </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm justify-end">
+<a class="w-full py-space-md px-space-lg bg-primary-container text-on-primary-container font-mono-spec-md text-mono-spec-md uppercase font-bold text-center tracking-wider hover:bg-on-surface hover:text-surface-container-lowest transition-all shadow-[0_0_20px_-4px_rgba(0,229,255,0.3)]" data-path="contact-and-rfq" href="#">
+              Submit Engineering RFQ
+            </a>
+<a class="w-full py-space-md px-space-lg bg-surface-container-high text-on-surface font-mono-spec-md text-mono-spec-md uppercase font-bold text-center hover:bg-surface-bright transition-colors" data-path="tech-specs-and-lab" href="#">
+              Explore Lab Kinematics
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="dark w-full bg-surface-container-lowest border-t border-outline-variant text-on-surface-variant"><div class="w-full px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl border-b border-outline-variant/60"><div class="lg:col-span-2 flex flex-col gap-space-md"><a class="flex items-center gap-space-sm group hover:opacity-80 transition-opacity" data-path="home-automation-projects" href="#"><img alt="Nexus Robotics Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSfUKwrmYyvHZq5SISwmcQhwwjD0mudNku996G5Fpbq5D_titFIcxjk-Rkby9ntmafEzJ65rwkMvUqYTq4AG4LZEwHSWxs7JVkEw0HTymLhXul2BRFin8pFqInXx3debuvlX4Gotp6zqwGUbNwc8ZVm8ZLgrcsuQ9roe9HvgJRWvM8vT52B4MIXLd70zgxUFdNsXz-h8ODVfN2eQMkcBpt_OhMSektMmWj_nzevPPhbGTX96A9OaKJwG4V"/><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">NEXUS ROBOTICS</span></a><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Premier industrial robotics and automation systems integrator. Delivering sub-millimeter precision kinematic platforms, cell-level automation, and full-scale factory deployments worldwide.</p>
+<div class="flex items-center gap-space-md pt-space-md">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="LinkedIn">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="X (Twitter)">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="GitHub">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="YouTube">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+</div><div class="flex flex-wrap gap-space-sm pt-space-xs"><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-primary">ISO 9001:2015</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-primary">RIA CERTIFIED INTEGRATOR</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-on-surface">CE MARK COMPLIANT</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-secondary">ITAR REGISTERED</span></div></div><div class="mt-space-sm p-space-md bg-surface-container-low border border-outline-variant/80"><div class="font-label-caps text-label-caps uppercase text-outline">Emergency Engineering Hotline &amp; Dispatch</div><div class="font-mono-spec-lg text-mono-spec-lg text-secondary font-bold mt-space-xs">+1 (800) 555-ROBOT</div><div class="font-mono-spec-sm text-mono-spec-sm text-on-surface-variant">24/7/365 On-Call Kinematic Telemetry Dispatch</div></div></div><div class="flex flex-col gap-space-sm"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Engineering Solutions</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Turnkey Robotic Cells</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Kinematic Motion Tuning</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Machine Vision &amp; QC</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">PLC &amp; SCADA Integration</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Autonomous Mobile Robots</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Hydraulic &amp; Servo Tooling</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Industry Verticals</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Automotive &amp; EV Battery</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Aerospace &amp; Defense</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Semiconductor Cleanrooms</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Pharmaceutical &amp; Bio-Lab</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Heavy Industrial Metallurgy</a></li><li><a class="hover:text-primary transition-colors" data-path="case-studies" href="#">Client Deployments</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Tech Bulletins &amp; Specs</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive firmware advisories, robotics whitepapers, and kinematic benchmarking releases.</p><form class="flex flex-col gap-space-xs"><input class="w-full px-space-md py-space-sm bg-surface-container border border-outline-variant font-mono-spec-sm text-mono-spec-sm text-on-surface focus:outline-none focus:border-primary" placeholder="engineer@domain.com" type="email"/><button class="w-full py-space-sm bg-surface-container-high hover:bg-primary hover:text-on-primary font-mono-spec-sm text-mono-spec-sm uppercase font-bold text-on-surface border border-outline-variant transition-colors" type="button">Subscribe to Dispatch</button></form><div class="flex flex-col gap-space-xs pt-space-xs"><div class="font-label-caps text-label-caps uppercase text-outline">Global Technical Centers</div><div class="font-mono-spec-sm text-mono-spec-sm text-on-surface">Detroit, MI (HQ) • Stuttgart, DE • Yokohama, JP</div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-mono-spec-sm text-mono-spec-sm"><div class="text-outline">© 2024 Nexus Robotics Systems Group. All rights reserved. System Ver. 4.8.2 // KINEMATICS ENGINE</div><div class="flex flex-wrap items-center gap-space-md"><a class="text-outline hover:text-on-surface transition-colors" href="#">Security Compliance</a><a class="text-outline hover:text-on-surface transition-colors" href="#">ITAR Controls</a><a class="text-outline hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-outline hover:text-on-surface transition-colors" href="#">Terms of Engineering</a></div></div></div></footer><script src="assets/site-global.js"></script>
+</body></html>

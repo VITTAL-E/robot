@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"var(--nxc-on-tertiary-fixed-variant)","on-secondary-fixed-variant":"var(--nxc-on-secondary-fixed-variant)","on-secondary-container":"var(--nxc-on-secondary-container)","on-error":"var(--nxc-on-error)","error":"var(--nxc-error)","on-secondary-fixed":"var(--nxc-on-secondary-fixed)","inverse-on-surface":"var(--nxc-inverse-on-surface)","on-error-container":"var(--nxc-on-error-container)","tertiary-fixed-dim":"var(--nxc-tertiary-fixed-dim)","tertiary-fixed":"var(--nxc-tertiary-fixed)","surface-container-high":"var(--nxc-surface-container-high)","outline-variant":"var(--nxc-outline-variant)","primary-container":"var(--nxc-primary-container)","secondary-container":"var(--nxc-secondary-container)","on-surface":"var(--nxc-on-surface)","secondary":"var(--nxc-secondary)","on-tertiary-container":"var(--nxc-on-tertiary-container)","primary-fixed-dim":"var(--nxc-primary-fixed-dim)","surface-container-highest":"var(--nxc-surface-container-highest)","inverse-primary":"var(--nxc-inverse-primary)","surface-tint":"var(--nxc-surface-tint)","primary":"var(--nxc-primary)","tertiary":"var(--nxc-tertiary)","on-primary-container":"var(--nxc-on-primary-container)","surface-variant":"var(--nxc-surface-variant)","surface-container":"var(--nxc-surface-container)","on-tertiary-fixed":"var(--nxc-on-tertiary-fixed)","outline":"var(--nxc-outline)","on-background":"var(--nxc-on-background)","background":"var(--nxc-background)","on-surface-variant":"var(--nxc-on-surface-variant)","tertiary-container":"var(--nxc-tertiary-container)","secondary-fixed":"var(--nxc-secondary-fixed)","surface-container-low":"var(--nxc-surface-container-low)","surface":"var(--nxc-surface)","on-primary-fixed":"var(--nxc-on-primary-fixed)","surface-dim":"var(--nxc-surface-dim)","inverse-surface":"var(--nxc-inverse-surface)","on-tertiary":"var(--nxc-on-tertiary)","on-secondary":"var(--nxc-on-secondary)","secondary-fixed-dim":"var(--nxc-secondary-fixed-dim)","surface-container-lowest":"var(--nxc-surface-container-lowest)","on-primary":"var(--nxc-on-primary)","on-primary-fixed-variant":"var(--nxc-on-primary-fixed-variant)","error-container":"var(--nxc-error-container)","surface-bright":"var(--nxc-surface-bright)","primary-fixed":"var(--nxc-primary-fixed)"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"3rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","gutter-mobile":"0.75rem"},"fontFamily":{"mono-spec-sm":["JetBrains Mono"],"mono-spec-lg":["JetBrains Mono"],"headline-lg-mobile":["Sora"],"display-xl-mobile":["Sora"],"body-md":["Inter"],"headline-sm":["Sora"],"body-lg":["Inter"],"headline-lg":["Sora"],"body-sm":["Inter"],"headline-md":["Sora"],"display-xl":["Sora"],"mono-spec-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"]},"fontSize":{"mono-spec-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"mono-spec-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"mono-spec-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"label-caps":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"700"}]}}}}</script><link href="assets/site-global.css" rel="stylesheet"/>
+
+
+<link rel="icon" type="image/png" href="assets/favicon-dark.png"/>
+</head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant"><div class="h-20 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-md group" data-path="home-automation-projects" href="#"><img alt="Nexus Robotics Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSfUKwrmYyvHZq5SISwmcQhwwjD0mudNku996G5Fpbq5D_titFIcxjk-Rkby9ntmafEzJ65rwkMvUqYTq4AG4LZEwHSWxs7JVkEw0HTymLhXul2BRFin8pFqInXx3debuvlX4Gotp6zqwGUbNwc8ZVm8ZLgrcsuQ9roe9HvgJRWvM8vT52B4MIXLd70zgxUFdNsXz-h8ODVfN2eQMkcBpt_OhMSektMmWj_nzevPPhbGTX96A9OaKJwG4V"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors">NEXUS ROBOTICS</span><span class="font-label-caps text-label-caps uppercase text-outline">Precision Automation Systems</span></div></a></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-medium"><div class="relative group"><button class="flex items-center gap-space-xs px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors"><span>Home</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="absolute left-0 top-full hidden group-hover:flex flex-col w-64 bg-surface-container border border-outline-variant shadow-2xl py-space-xs z-50"><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" data-path="home-automation-projects" href="#">Home 1: Automation Projects</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" data-path="home-turnkey-robotics" href="#">Home 2: Turnkey Robotics</a></div></div><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="case-studies" href="#">Case Studies</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="industries-served" href="#">Industries Served</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="tech-specs-and-lab" href="#">Tech Specs &amp; Lab</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-and-rfq" href="#">Contact &amp; RFQ</a></nav><div class="flex items-center gap-space-md"><button aria-label="Toggle RTL" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all duration-200 border border-outline-variant/40" id="rtl-toggle" onclick="toggleRTL()" title="Toggle RTL"><span class="material-symbols-outlined text-on-surface-variant text-[18px]" id="rtl-icon">language</span></button><button aria-label="Toggle Theme" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all duration-200 border border-outline-variant/40" id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme"><span class="material-symbols-outlined text-on-surface-variant text-[18px]" id="theme-icon">dark_mode</span></button><a class="relative inline-flex items-center justify-center px-space-lg py-space-sm bg-primary-container text-on-primary-container font-mono-spec-sm text-mono-spec-sm uppercase font-bold tracking-wider hover:bg-on-surface hover:text-surface-container-lowest transition-all duration-200 border-none" data-path="contact-and-rfq" href="#"><span class="relative z-10">Submit RFQ</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION WITH SENSOR OVERLAY -->
+<section class="dark relative w-full overflow-hidden bg-surface-container-lowest -mt-20 pt-20">
+<div class="relative w-full min-h-[640px] lg:min-h-[720px] flex items-center">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 z-0">
+<img alt="Heavy automated robotic welding cell in an automotive plant" class="w-full h-full object-cover object-center filter brightness-[0.7] contrast-[1.15]" src="https://lh3.googleusercontent.com/aida/AEtjO1UO_ipgxRKKDkP7W24svdt4OA4uC7l2vUxCN-i1fce5bcHkLbEjz9rgy9NFCWi9uOdr08Qh6KqT7TMm1CZaCsCQdtJ-Vf0q4JyDF_psPcyIEXeIakuKujR25bR8r4FU-D2lVMUP10WlUXd82E7MsSXhVM0KiY0JuiZFjgGUcc3GzHM0No2n6tRNRzbAOUOAgXounZgM4eZm-QA5Uf0aeRg6wbjtc6f_-DocBCDcEWosTDDJFDPQckNDxqiB"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-container/10 via-transparent to-transparent mix-blend-screen pointer-events-none"></div>
+</div>
+<!-- Hero Visual Grid Lines & Tech Crosshairs -->
+<div class="absolute inset-0 z-10 pointer-events-none flex flex-col justify-between p-space-md opacity-30">
+<div class="flex justify-between items-start font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">
+<span>// SYS_ID: NX-ROBOTIC-01</span>
+<span>CELL POS: 42.3314° N, 83.0458° W</span>
+<span>SYS_LATENCY: 0.84ms</span>
+</div>
+<div class="flex justify-between items-end font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">
+<span>ZONE: KINEMATIC_AUTO_A7</span>
+<span>FEED: 120 FPS // TELECENTRIC</span>
+</div>
+</div>
+<!-- Main Hero Content -->
+<div class="relative z-20 max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-2xl w-full">
+<div class="max-w-3xl flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 bg-surface-container-high/90 text-primary-container rounded">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm uppercase tracking-widest font-bold">AUTOMATION ENGINEERING DIVISION</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+            Next-Gen Robotic Workcells &amp; Autonomous Assembly Systems
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Precision engineering, turnkey robotic integration, and real-time PLC telemetry for high-throughput automotive, aerospace, and semiconductor manufacturing.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="px-space-lg py-space-sm bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-bold tracking-wider uppercase rounded shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:bg-primary-fixed-dim transition-all flex items-center gap-space-xs" href="#projects">
+<span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+              EXPLORE PROJECT HIGHLIGHTS
+            </a>
+<a class="px-space-lg py-space-sm bg-surface-container-high/80 text-secondary font-headline-sm text-body-sm font-semibold tracking-wider uppercase rounded hover:bg-surface-container-highest transition-all flex items-center gap-space-xs" href="#configurator">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+              OPEN CELL CONFIGURATOR
+            </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetry Status Ribbon -->
+<div class="relative z-20 w-full bg-surface-container-lowest/95 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin py-space-md">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="flex items-center gap-space-sm bg-surface-container-low/60 p-space-sm rounded">
+<div class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">99.98%</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant tracking-wider">OEE BENCHMARK AVG</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low/60 p-space-sm rounded">
+<div class="w-10 h-10 rounded bg-tertiary-container/10 flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">450+</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant tracking-wider">CELLS COMMISSIONED</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low/60 p-space-sm rounded">
+<div class="w-10 h-10 rounded bg-secondary-container/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">timelapse</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">&lt;1.2s</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant tracking-wider">KINEMATIC CYCLE TIME</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low/60 p-space-sm rounded">
+<div class="w-10 h-10 rounded bg-primary-container/10 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">SIL-3</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant tracking-wider">IEC 61508 CERTIFIED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: FLAGSHIP AUTOMATION PROJECTS -->
+<section class="w-full py-space-2xl bg-surface-dim" id="projects">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container tracking-widest uppercase">DEPLOYED INTEGRATIONS</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">Flagship Automation Projects</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Custom engineered kinetic workcells driving ultra-high tolerances in mission-critical manufacturing facilities globally.
+          </p>
+</div>
+<div class="font-telemetry-code text-telemetry-code text-outline flex items-center gap-space-xs">
+<span>CELL ARCHITECTURE MATRIX</span>
+<span class="text-primary-container">[LIVE_REV_04]</span>
+</div>
+</div>
+<!-- Bento-style Project Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Project 1: HyperWeld 7 -->
+<div class="flex flex-col bg-surface-container-low rounded p-space-md shadow-lg hover:shadow-[0_0_24px_rgba(0,240,255,0.15)] transition-all">
+<div class="relative w-full h-56 rounded overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="Futuristic multi-arm automotive battery pack robotic laser welding workcell with orange industrial robot arms precision welding prismatic battery cells emitting bright cyan laser light arcs inside a dark clean industrial laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ4-XeHO4_gR1kHozm3ILY88Oa9fnHmo82yxCnyNT_B3K2GKVouK9J3iuGgrbgP08GafDZ8LXQElJzE91JscoqkZRE08vFR4zLsMnIQQFXGPQ79ugSSBBW9cd8HJfuIz7cazmwWMmp64psmzlcQSgtLeuhkvmDxPp9UXKvtJewrwFRIvHnr7mhQ6o6M96e_tLlmhB6VGEw6-uA4DZWtKq0SYkAWHlJjq6k1MLImguevLqeMfgyThqAGw"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 bg-surface-container-lowest/90 font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container uppercase rounded">
+              PROJECT ID: HW-07
+            </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-tertiary-fixed-dim/20 text-tertiary font-telemetry-mono-sm text-telemetry-mono-sm rounded">
+              STATUS: COMMISSIONED
+            </div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant uppercase">AUTOMOTIVE // EV DRIVE UNITS</span>
+<span class="font-telemetry-code text-telemetry-code text-primary-fixed-dim font-bold">18-AXIS</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold mb-space-xs">Project HyperWeld 7</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Synchronized dual-manipulator robotic laser welding system engineered for high-energy density 800V EV traction battery enclosures.
+            </p>
+<div class="mt-auto pt-space-sm bg-surface-container rounded p-space-sm flex flex-col gap-space-xs font-telemetry-code text-telemetry-code">
+<div class="flex justify-between text-on-surface-variant">
+<span>REPEATABILITY:</span>
+<span class="text-on-surface font-bold">±0.05 mm</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>COMMUNICATION:</span>
+<span class="text-primary-container font-bold">EtherNet/IP CIP Sync</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>PAYLOAD CAP:</span>
+<span class="text-on-surface font-bold">280 kg / arm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: AeroGrip Delta -->
+<div class="flex flex-col bg-surface-container-low rounded p-space-md shadow-lg hover:shadow-[0_0_24px_rgba(255,45,120,0.15)] transition-all">
+<div class="relative w-full h-56 rounded overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="High precision carbon fiber aerospace wing skin automated fiber placement robotic system with vacuum suction end-effector inspecting composite aerospace fuselage panels under dramatic cyan and magenta diagnostic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVE5tHyzzgJFzSF6hGewSElMGayrD-5bxpX7O23mxSJeWaTQzquNiEzW2JiD-cemSNOjj3bO4U1xzf-9-HhGLsFxzXHWoVVcL2ypWkvKAXiHZou1aej1fstQxuCt6z8AiQ2Cjx44TjXRjKZJgBtoN0WiRzDtVZ7Cf8j6AiGqSg2OYYot0F4ZVyblx1To7fmr-AY1Qy4udakyw7XsXVh8-K8xFobt5KNOxPC364UoZnhUY0XubdpbeUwQ"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 bg-surface-container-lowest/90 font-telemetry-mono-sm text-telemetry-mono-sm text-secondary uppercase rounded">
+              PROJECT ID: AG-DELTA
+            </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-primary-container/20 text-primary-fixed font-telemetry-mono-sm text-telemetry-mono-sm rounded">
+              STATUS: OPERATIONAL
+            </div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant uppercase">AEROSPACE // COMPOSITES</span>
+<span class="font-telemetry-code text-telemetry-code text-secondary font-bold">CLASS 5</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold mb-space-xs">AeroGrip Delta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              High-stiffness carbon fiber placement and inline ultrasonic non-destructive testing workcell for supersonic fuselage components.
+            </p>
+<div class="mt-auto pt-space-sm bg-surface-container rounded p-space-sm flex flex-col gap-space-xs font-telemetry-code text-telemetry-code">
+<div class="flex justify-between text-on-surface-variant">
+<span>NDT SENSOR:</span>
+<span class="text-secondary font-bold">Phased Array UT (64-Ch)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>VACUUM MATRIX:</span>
+<span class="text-on-surface font-bold">128 Zone Auto-Reg</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>COMPLIANCE:</span>
+<span class="text-primary-container font-bold">ISO 14644-1 Class 5</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3: MicroTrace SMT -->
+<div class="flex flex-col bg-surface-container-low rounded p-space-md shadow-lg hover:shadow-[0_0_24px_rgba(44,226,141,0.15)] transition-all">
+<div class="relative w-full h-56 rounded overflow-hidden mb-space-md">
+<img class="w-full h-full object-cover" data-alt="High speed cleanroom dual-gantry Cartesian semiconductor inspection robot examining microchip wafers with telecentric blue illumination, micro cameras, and high-speed linear motors in clean sterile silicon fabrication cleanroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc0ftby6N4w9OhfAL6-kfVk155DWb_Za7PVgzPywnxzcgCB6r8EreqcXe6pH0y8SEUX_8nZW9cbD7v00eX_OYSkXPLFvTFYaE6Xf3PnMD47hM11vG8k35m0KShB0oLb0tlc1EhsfE2-nLwnUpB9L1eHEQFX_ktDqcMvUq-zPhxIl2r0TxewBOMZSx82x_mjhmsb_noyZMzDy9vQRTwyRt6u6aBznrhru6GsUthZek-SIrjNqmhWSMMWg"/>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 bg-surface-container-lowest/90 font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim uppercase rounded">
+              PROJECT ID: MT-SMT
+            </div>
+<div class="absolute bottom-2 right-2 px-space-xs py-0.5 bg-tertiary-fixed-dim/20 text-tertiary font-telemetry-mono-sm text-telemetry-mono-sm rounded">
+              STATUS: COMMISSIONED
+            </div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant uppercase">SEMICONDUCTOR // SMT</span>
+<span class="font-telemetry-code text-telemetry-code text-tertiary font-bold">320 PPM</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold mb-space-xs">MicroTrace SMT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Sub-micron dual-gantry optical inspection cell operating at 320 parts per minute for advanced automotive radar microcontrollers.
+            </p>
+<div class="mt-auto pt-space-sm bg-surface-container rounded p-space-sm flex flex-col gap-space-xs font-telemetry-code text-telemetry-code">
+<div class="flex justify-between text-on-surface-variant">
+<span>IMAGING RIG:</span>
+<span class="text-tertiary font-bold">4K Telecentric @ 120fps</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>BUS INTERFACE:</span>
+<span class="text-primary-container font-bold">EtherCAT 100μs cycle</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>DEFECT TOLERANCE:</span>
+<span class="text-on-surface font-bold">&lt; 0.001% Escape Rate</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: INTERACTIVE CELL CONFIGURATOR (UNIQUE FEATURE) -->
+<section class="w-full py-space-2xl bg-surface-container-lowest relative overflow-hidden" id="configurator">
+<!-- Subtle Background Grid Pattern -->
+<div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#00f0ff_1px,transparent_1px),linear-gradient(to_bottom,#00f0ff_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-secondary tracking-widest uppercase">INTERACTIVE ENGINEERING TOOL</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">Kinematic Cell Configurator</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Simulate your production parameters to determine optimal manipulator kinematics, controller stack, and cycle-time velocity matrix.
+          </p>
+</div>
+<div class="px-space-sm py-space-xs bg-surface-container-high rounded flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">
+<span class="w-1.5 h-1.5 bg-primary-container animate-pulse"></span>
+          REAL-TIME TELEMETRY ENGINE
+        </div>
+</div>
+<!-- Configurator Grid: Controls on Left, Live Telemetry Matrix on Right -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Input Controls (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg bg-surface-container-low p-space-lg rounded shadow-xl">
+<!-- Param 1: Payload Capacity -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px]">weight</span>
+                1. Payload Capacity Category
+              </label>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container" id="cfg-payload-display">MEDIUM (5-50 KG)</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm mt-space-xs">
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-payload-light" onclick="selectConfig('payload', 'light')" type="button">
+<div class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CLASS A</div>
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">Light</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">&lt; 5 kg</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-primary-container/20 text-left transition-all shadow-[0_0_12px_rgba(0,240,255,0.2)]" id="btn-payload-medium" onclick="selectConfig('payload', 'medium')" type="button">
+<div class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">CLASS B</div>
+<div class="font-headline-sm text-body-sm text-primary-fixed font-bold">Medium</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface">5 - 50 kg</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-payload-heavy" onclick="selectConfig('payload', 'heavy')" type="button">
+<div class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CLASS C</div>
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">Heavy</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">50 - 1000 kg</div>
+</button>
+</div>
+</div>
+<!-- Param 2: Kinematic Motion Type -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">precision_manufacturing</span>
+                2. Kinematic Motion Type
+              </label>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-secondary" id="cfg-motion-display">6-AXIS ARTICULATED</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm mt-space-xs">
+<button class="config-opt-btn p-space-sm rounded bg-secondary-container/20 text-left transition-all shadow-[0_0_12px_rgba(255,45,120,0.2)]" id="btn-motion-articulated" onclick="selectConfig('motion', 'articulated')" type="button">
+<div class="font-headline-sm text-body-sm text-secondary font-bold">6-Axis</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">Articulated Arm</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-motion-delta" onclick="selectConfig('motion', 'delta')" type="button">
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">Delta</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">Tri-pod Parallel</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-motion-scara" onclick="selectConfig('motion', 'scara')" type="button">
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">SCARA</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">4-Axis Selective</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-motion-gantry" onclick="selectConfig('motion', 'gantry')" type="button">
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">Cartesian</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">Linear Gantry</div>
+</button>
+</div>
+</div>
+<!-- Param 3: Application Domain -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">memory</span>
+                3. Application Domain
+              </label>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim" id="cfg-app-display">ARC/LASER WELDING</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<button class="config-opt-btn p-space-sm rounded bg-tertiary-container/20 text-left transition-all shadow-[0_0_12px_rgba(44,226,141,0.2)]" id="btn-app-welding" onclick="selectConfig('app', 'welding')" type="button">
+<div class="font-headline-sm text-body-sm text-tertiary font-bold">Arc / Laser Welding</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">Continuous seam, gas shield</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-app-assembly" onclick="selectConfig('app', 'assembly')" type="button">
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">Precision Assembly</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">Force-torque sensor mating</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-app-tending" onclick="selectConfig('app', 'tending')" type="button">
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">Machine Tending CNC</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">High-torque pallet loading</div>
+</button>
+<button class="config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high" id="btn-app-cleanroom" onclick="selectConfig('app', 'cleanroom')" type="button">
+<div class="font-headline-sm text-body-sm text-on-surface font-bold">Cleanroom Packaging</div>
+<div class="font-telemetry-code text-telemetry-code text-on-surface-variant">ISO 4/5 particle seal</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Computed System Matrix Display (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between bg-surface-container p-space-lg rounded shadow-2xl relative">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-high/40 p-space-sm rounded">
+<div class="flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+              COMPUTED CELL PROFILE
+            </div>
+<span class="font-telemetry-code text-telemetry-code text-outline">AUTO-RESOLVED</span>
+</div>
+<div class="my-space-md flex flex-col gap-space-md">
+<!-- Manipulator Model -->
+<div class="p-space-md bg-surface-container-low rounded">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline uppercase">RECOMMENDED ROBOTIC MANIPULATOR</span>
+<div class="font-headline-lg text-headline-lg text-primary-container font-bold mt-1" id="cfg-res-manipulator">
+                KUKA KR QUANTEC // KR C5
+              </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="cfg-res-desc">
+                High-inertia payload envelope optimized for multi-axis continuous seam tracking.
+              </div>
+</div>
+<!-- Dynamic Metrics Cluster -->
+<div class="grid grid-cols-2 gap-space-sm font-telemetry-code text-telemetry-code">
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-1">
+<span class="text-outline text-telemetry-mono-sm">EST. CYCLE SPEED</span>
+<span class="text-headline-md font-bold text-on-surface font-headline-md" id="cfg-res-speed">0.88s</span>
+<span class="text-on-surface-variant text-telemetry-mono-sm">per complete cycle</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-1">
+<span class="text-outline text-telemetry-mono-sm">AXIAL REPEATABILITY</span>
+<span class="text-headline-md font-bold text-tertiary font-headline-md" id="cfg-res-repeat">±0.025 mm</span>
+<span class="text-on-surface-variant text-telemetry-mono-sm">ISO 9283 validated</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-1">
+<span class="text-outline text-telemetry-mono-sm">SAFETY FIELD BUS</span>
+<span class="text-body-md font-bold text-primary-fixed font-headline-sm" id="cfg-res-safety">CIP Safety</span>
+<span class="text-on-surface-variant text-telemetry-mono-sm">EtherNet/IP SIL-3</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded flex flex-col gap-1">
+<span class="text-outline text-telemetry-mono-sm">PLC CONTROLLER</span>
+<span class="text-body-md font-bold text-secondary font-headline-sm" id="cfg-res-plc">Rockwell GuardLogix</span>
+<span class="text-on-surface-variant text-telemetry-mono-sm">5580 Integrated</span>
+</div>
+</div>
+<!-- Kinematic Visualization Spark -->
+<div class="p-space-sm bg-surface-container-low rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">troubleshoot</span>
+<div class="flex flex-col">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface font-bold">DIGITAL TWIN SIMULATION</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface-variant">Kinematic reach test verified in Siemens Process Simulate</span>
+</div>
+</div>
+<span class="px-space-xs py-1 bg-tertiary-container/20 text-tertiary font-telemetry-mono-sm text-telemetry-mono-sm rounded font-bold">100% REACH</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<a class="w-full text-center py-space-sm bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-bold uppercase rounded shadow-[0_0_16px_rgba(0,240,255,0.4)] hover:bg-primary-fixed-dim transition-all" data-path="contact-&amp;-rfq" href="#">
+              LOCK IN CONFIG &amp; REQUEST QUOTE
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: TURNKEY ENGINEERING LIFECYCLE (5-GATE PIPELINE) -->
+<section class="w-full py-space-2xl bg-surface-dim">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col gap-space-xs mb-space-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 bg-tertiary-fixed-dim"></span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim tracking-widest uppercase">QUALITY ASSURANCE FRAMEWORK</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">Turnkey Engineering Lifecycle</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          A rigid 5-Gate validation pipeline guaranteeing zero unexpected downtime from virtual physics validation to industrial site commissioning.
+        </p>
+</div>
+<!-- 5 Gate Horizontal Process Flow -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-space-md">
+<!-- Gate 01 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-primary-container font-bold">GATE 01</span>
+<span class="material-symbols-outlined text-outline text-[20px]">view_in_ar</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">Digital Twin Sim</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Full kinematic physics modeling, cycle-time simulation, and collision prevention in Siemens Tecnomatix &amp; Visual Components.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-fixed-dim">
+            DELIVERABLE: 3D SIM VIZ
+          </div>
+</div>
+<!-- Gate 02 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-primary-container font-bold">GATE 02</span>
+<span class="material-symbols-outlined text-outline text-[20px]">hardware</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">EOAT Custom Machining</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              In-house 5-axis CNC machining of custom End-of-Arm Tooling, vacuum grippers, and quick-change pneumatic systems.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-fixed-dim">
+            DELIVERABLE: CMM TOLERANCE REPORT
+          </div>
+</div>
+<!-- Gate 03 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-secondary font-bold">GATE 03</span>
+<span class="material-symbols-outlined text-outline text-[20px]">electrical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">Controls &amp; Safety</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              NFPA 79 panel build, SIL-3 safety circuit wiring, PLC code generation, and multi-network industrial bus routing.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-secondary">
+            DELIVERABLE: E-PLAN SCHEMATICS
+          </div>
+</div>
+<!-- Gate 04 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-tertiary-fixed-dim font-bold">GATE 04</span>
+<span class="material-symbols-outlined text-outline text-[20px]">fact_check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">Factory Testing (FAT)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Continuous 72-hour stress-test on our Detroit assembly floor with live customer production stock before transport.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary">
+            DELIVERABLE: SIGNED FAT CERTIFICATE
+          </div>
+</div>
+<!-- Gate 05 -->
+<div class="bg-surface-container-low p-space-md rounded shadow-md flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-sm">
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-primary-fixed font-bold">GATE 05</span>
+<span class="material-symbols-outlined text-outline text-[20px]">rocket_launch</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">Site SAT &amp; Ramp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Rigging, final floor anchoring, laser tracker re-calibration, MES handshakes, and 24/7 on-site operator certification.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-fixed">
+            DELIVERABLE: PRODUCTION HANDOVER
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: TIER-1 HARDWARE & CONTROLLER ECOSYSTEM MATRIX (UNIQUE FEATURE) -->
+<section class="w-full py-space-2xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container tracking-widest uppercase">HARDWARE INTEROPERABILITY</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">Tier-1 Controller Ecosystem</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Certified integration partnerships across global robotics, automation PLC architectures, and machine vision ecosystems.
+          </p>
+</div>
+<div class="font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          ALL OEM CERTIFICATIONS CURRENT
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Partner 1 -->
+<div class="p-space-md bg-surface-container rounded shadow hover:bg-surface-container-high transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">FANUC Robotics</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container rounded">LEVEL 4 INTEGRATOR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Direct integration with R-30iB Plus controllers, ROBOGUIDE offline programming, and Dual Check Safety (DCS) architectures.
+          </p>
+<div class="flex justify-between items-center font-telemetry-code text-telemetry-code text-outline pt-space-xs">
+<span>MODELS: CRX, M-900iB, R-2000</span>
+<span class="text-tertiary">SYNC READY</span>
+</div>
+</div>
+<!-- Partner 2 -->
+<div class="p-space-md bg-surface-container rounded shadow hover:bg-surface-container-high transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">KUKA Robotics</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-secondary rounded">OFFICIAL SYSTEM PARTNER</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Native KUKA.RobotSensorInterface (RSI) for ultra-fast dynamic trajectory alteration and KR C5 micro controller integration.
+          </p>
+<div class="flex justify-between items-center font-telemetry-code text-telemetry-code text-outline pt-space-xs">
+<span>MODELS: KR QUANTEC, CYBERTECH</span>
+<span class="text-tertiary">SYNC READY</span>
+</div>
+</div>
+<!-- Partner 3 -->
+<div class="p-space-md bg-surface-container rounded shadow hover:bg-surface-container-high transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Siemens Industry</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container rounded">SOLUTION PARTNER</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            TIA Portal V19 standardization, SIMATIC S7-1500 Failsafe CPUs, and SINAMICS integrated motion multi-axis servos.
+          </p>
+<div class="flex justify-between items-center font-telemetry-code text-telemetry-code text-outline pt-space-xs">
+<span>BUS: PROFINET / PROFIsafe</span>
+<span class="text-tertiary">CERTIFIED</span>
+</div>
+</div>
+<!-- Partner 4 -->
+<div class="p-space-md bg-surface-container rounded shadow hover:bg-surface-container-high transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Rockwell Automation</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-secondary rounded">SILVER SYSTEM INTEGRATOR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Allen-Bradley GuardLogix 5580 safety controllers, Kinetix 5700 multi-axis servo drives, and FactoryTalk View telemetry.
+          </p>
+<div class="flex justify-between items-center font-telemetry-code text-telemetry-code text-outline pt-space-xs">
+<span>PROTOCOL: CIP Sync / EtherNet/IP</span>
+<span class="text-tertiary">CERTIFIED</span>
+</div>
+</div>
+<!-- Partner 5 -->
+<div class="p-space-md bg-surface-container rounded shadow hover:bg-surface-container-high transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Beckhoff Automation</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container rounded">IPC &amp; ETHERCAT EXPERT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            TwinCAT 3.1 C++ real-time kinematic extensions, XTS linear transport systems, and TwinSAFE modular I/O topologies.
+          </p>
+<div class="flex justify-between items-center font-telemetry-code text-telemetry-code text-outline pt-space-xs">
+<span>CYCLE: 100μs EtherCAT SLICE</span>
+<span class="text-tertiary">VALIDATED</span>
+</div>
+</div>
+<!-- Partner 6 -->
+<div class="p-space-md bg-surface-container rounded shadow hover:bg-surface-container-high transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Cognex &amp; Schunk</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim rounded">OPTICS &amp; GRIPPERS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            In-Sight 3800 AI vision guidance and Schunk EGP electric parallel grippers with IO-Link parametric feedback.
+          </p>
+<div class="flex justify-between items-center font-telemetry-code text-telemetry-code text-outline pt-space-xs">
+<span>VISION: 2D/3D Point Cloud Guidance</span>
+<span class="text-tertiary">VERIFIED</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: FIELD DEPLOYMENT TESTIMONIAL & METRICS PROOF -->
+<section class="w-full py-space-2xl bg-surface-dim">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center bg-surface-container-low p-space-xl rounded shadow-2xl">
+<div class="lg:col-span-4 flex flex-col items-center text-center">
+<div class="w-32 h-32 rounded overflow-hidden shadow-xl mb-space-md relative">
+<img class="w-full h-full object-cover" data-alt="Portrait of an experienced male manufacturing executive in a modern high tech automotive manufacturing center with safety glasses and dark tech attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOOYZhL3PxGbTqpAojlBua4zCHtjxJIVfFuHEVHMlyJ1FpS87sWHqTQboRjyjLmYawumnHNEm_rmXcX30amjtHogAgg40bEezH6rllXDGgzGz2PE9PVJYPABFPcX2eUkN4C4lk4phyb2X0AejrlzY9x8ChxsSSGQC4eIoiKkp9v_JlWD7wKFlzaGWr59T6fKOg20OuW6MoqlwJ7wzuYSn-mHSayepCK-mDW1jb_2Sges9BrKBxDuS_QA"/>
+<div class="absolute bottom-1 right-1 px-1 bg-surface-container-lowest font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container rounded">
+              VERIFIED
+            </div>
+</div>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">Dr. Marcus Vance</div>
+<div class="font-telemetry-code text-telemetry-code text-primary-container">VP of Advanced Manufacturing</div>
+<div class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant mt-1">VOLT-DYNAMICS MOBILITY CORP</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            FAT &amp; SAT COMMISSIONING AUDIT REPORT #VD-8902
+          </div>
+<blockquote class="font-headline-lg text-headline-lg text-on-surface font-medium italic leading-relaxed">
+            “Nexus Robotics deployed 14 coordinated welding and assembly cells across our Michigan gigafactory on a compressed 16-week timeline. Not only did they beat the target 1.4s cycle time down to 1.12s, their digital twin simulation accurately anticipated every thermal drift condition before physical steel touched the floor.”
+          </blockquote>
+<div class="grid grid-cols-3 gap-space-sm pt-space-sm bg-surface-container p-space-sm rounded">
+<div class="flex flex-col">
+<span class="font-headline-sm font-bold text-primary-container">+34.8%</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">Throughput Gain</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm font-bold text-tertiary">0.0004%</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">Weld Reject Rate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm font-bold text-secondary">16 Days</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">Ahead of Schedule</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CLOSING HARDWARE RFQ DISPATCH -->
+<section class="w-full py-space-2xl bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded text-primary-container mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm tracking-widest font-bold">READY TO EXPEDITE SYSTEM ARCHITECTURE?</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold max-w-3xl mb-space-sm">
+        Eliminate Cycle Time Bottlenecks with Surgical Automation
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl">
+        Send us your component CAD drawings (.STEP / .IGES) or target cycle times. Our robotics application engineering team delivers preliminary cycle simulations and 3D workcell footprints within 48 hours.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<a class="px-space-xl py-space-md bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold uppercase rounded shadow-[0_0_24px_rgba(0,240,255,0.45)] hover:bg-primary-fixed-dim transition-all flex items-center gap-space-xs" data-path="contact-&amp;-rfq" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+          SUBMIT CELL RFQ NOW
+        </a>
+<a class="px-space-xl py-space-md bg-surface-container text-on-surface font-headline-sm text-headline-sm font-semibold uppercase rounded hover:bg-surface-container-high transition-all flex items-center gap-space-xs" data-path="tech-specs-&amp;-lab" href="#">
+<span class="material-symbols-outlined text-[20px]">biotech</span>
+          TOUR OUR DETROIT LAB
+        </a>
+</div>
+<div class="mt-space-xl font-telemetry-code text-telemetry-code text-outline flex items-center gap-space-md">
+<span>ITAR REGISTERED</span>
+<span>//</span>
+<span>ISO 9001:2015 AUDITED</span>
+<span>//</span>
+<span>RIA CERTIFIED ROBOTIC INTEGRATOR</span>
+</div>
+</div>
+</section>
+</div>
+<!-- CLIENT INTERACTIVITY: CELL CONFIGURATOR LOGIC -->
+<script>
+  const configState = {
+    payload: 'medium',
+    motion: 'articulated',
+    app: 'welding'
+  };
+
+  const matrixDatabase = {
+    'light-articulated-welding': {
+      robot: 'KUKA KR CYBERTECH nano',
+      desc: 'Agile lightweight laser soldering & precision micro-welding arm.',
+      speed: '0.62s',
+      repeat: '±0.020 mm',
+      safety: 'CIP Safety',
+      plc: 'Rockwell GuardLogix'
+    },
+    'light-delta-assembly': {
+      robot: 'FANUC DR-3iB/8L Delta',
+      desc: 'Ultra-high-speed picking and electronic surface component assembly.',
+      speed: '0.38s',
+      repeat: '±0.030 mm',
+      safety: 'PROFIsafe',
+      plc: 'Siemens S7-1500F'
+    },
+    'light-scara-cleanroom': {
+      robot: 'EPSON GX4 SCARA Cleanroom',
+      desc: 'ISO Class 3 compliant micro-wafer handling and medical vial capping.',
+      speed: '0.45s',
+      repeat: '±0.008 mm',
+      safety: 'TwinSAFE',
+      plc: 'Beckhoff CX5140'
+    },
+    'medium-articulated-welding': {
+      robot: 'KUKA KR QUANTEC // KR C5',
+      desc: 'High-inertia payload envelope optimized for multi-axis continuous seam tracking.',
+      speed: '0.88s',
+      repeat: '±0.025 mm',
+      safety: 'CIP Safety',
+      plc: 'Rockwell GuardLogix 5580'
+    },
+    'medium-articulated-tending': {
+      robot: 'FANUC M-20iD/35',
+      desc: 'Rigid hollow wrist tending CNC lathes, mill-turn machining, and casting cells.',
+      speed: '1.05s',
+      repeat: '±0.022 mm',
+      safety: 'Dual Check Safety',
+      plc: 'Siemens S7-1500F'
+    },
+    'heavy-articulated-welding': {
+      robot: 'FANUC M-900iB/360',
+      desc: 'Heavy-payload automotive body-in-white spot and laser welding manipulator.',
+      speed: '1.40s',
+      repeat: '±0.050 mm',
+      safety: 'CIP Safety',
+      plc: 'Rockwell GuardLogix 5580'
+    },
+    'heavy-gantry-assembly': {
+      robot: 'NEXUS Dual-Cartesian Gantry X-900',
+      desc: 'Multi-ton structural battery tray installation and aerospace spar positioning.',
+      speed: '2.10s',
+      repeat: '±0.040 mm',
+      safety: 'TwinSAFE EtherCAT',
+      plc: 'Beckhoff Industrial PC'
+    }
+  };
+
+  function selectConfig(type, value) {
+    configState[type] = value;
+
+    // Reset buttons in this category
+    const buttons = document.querySelectorAll(`[id^="btn-${type}-"]`);
+    buttons.forEach(btn => {
+      btn.className = "config-opt-btn p-space-sm rounded bg-surface-container text-left transition-all hover:bg-surface-container-high";
+    });
+
+    // Highlight selected button
+    const activeBtn = document.getElementById(`btn-${type}-${value}`);
+    if (activeBtn) {
+      if (type === 'payload') {
+        activeBtn.className = "config-opt-btn p-space-sm rounded bg-primary-container/20 text-left transition-all shadow-[0_0_12px_rgba(0,240,255,0.2)]";
+        document.getElementById('cfg-payload-display').innerText = `${value.toUpperCase()} ENVELOPE`;
+      } else if (type === 'motion') {
+        activeBtn.className = "config-opt-btn p-space-sm rounded bg-secondary-container/20 text-left transition-all shadow-[0_0_12px_rgba(255,45,120,0.2)]";
+        document.getElementById('cfg-motion-display').innerText = value.toUpperCase();
+      } else {
+        activeBtn.className = "config-opt-btn p-space-sm rounded bg-tertiary-container/20 text-left transition-all shadow-[0_0_12px_rgba(44,226,141,0.2)]";
+        document.getElementById('cfg-app-display').innerText = value.toUpperCase();
+      }
+    }
+
+    // Lookup matching or fallback preset
+    const key = `${configState.payload}-${configState.motion}-${configState.app}`;
+    const result = matrixDatabase[key] || matrixDatabase['medium-articulated-welding'];
+
+    // Update DOM Display
+    const elManipulator = document.getElementById('cfg-res-manipulator');
+    const elDesc = document.getElementById('cfg-res-desc');
+    const elSpeed = document.getElementById('cfg-res-speed');
+    const elRepeat = document.getElementById('cfg-res-repeat');
+    const elSafety = document.getElementById('cfg-res-safety');
+    const elPlc = document.getElementById('cfg-res-plc');
+
+    if (elManipulator) elManipulator.innerText = result.robot;
+    if (elDesc) elDesc.innerText = result.desc;
+    if (elSpeed) elSpeed.innerText = result.speed;
+    if (elRepeat) elRepeat.innerText = result.repeat;
+    if (elSafety) elSafety.innerText = result.safety;
+    if (elPlc) elPlc.innerText = result.plc;
+  }
+</script></main><footer class="dark w-full bg-surface-container-lowest border-t border-outline-variant text-on-surface-variant"><div class="w-full px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl border-b border-outline-variant/60"><div class="lg:col-span-2 flex flex-col gap-space-md"><a class="flex items-center gap-space-sm group hover:opacity-80 transition-opacity" data-path="home-automation-projects" href="#"><img alt="Nexus Robotics Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSfUKwrmYyvHZq5SISwmcQhwwjD0mudNku996G5Fpbq5D_titFIcxjk-Rkby9ntmafEzJ65rwkMvUqYTq4AG4LZEwHSWxs7JVkEw0HTymLhXul2BRFin8pFqInXx3debuvlX4Gotp6zqwGUbNwc8ZVm8ZLgrcsuQ9roe9HvgJRWvM8vT52B4MIXLd70zgxUFdNsXz-h8ODVfN2eQMkcBpt_OhMSektMmWj_nzevPPhbGTX96A9OaKJwG4V"/><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">NEXUS ROBOTICS</span></a><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Premier industrial robotics and automation systems integrator. Delivering sub-millimeter precision kinematic platforms, cell-level automation, and full-scale factory deployments worldwide.</p>
+<div class="flex items-center gap-space-md pt-space-md">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="LinkedIn">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="X (Twitter)">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="GitHub">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="YouTube">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+</div><div class="flex flex-wrap gap-space-sm pt-space-xs"><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-primary">ISO 9001:2015</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-primary">RIA CERTIFIED INTEGRATOR</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-on-surface">CE MARK COMPLIANT</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-secondary">ITAR REGISTERED</span></div></div><div class="mt-space-sm p-space-md bg-surface-container-low border border-outline-variant/80"><div class="font-label-caps text-label-caps uppercase text-outline">Emergency Engineering Hotline &amp; Dispatch</div><div class="font-mono-spec-lg text-mono-spec-lg text-secondary font-bold mt-space-xs">+1 (800) 555-ROBOT</div><div class="font-mono-spec-sm text-mono-spec-sm text-on-surface-variant">24/7/365 On-Call Kinematic Telemetry Dispatch</div></div></div><div class="flex flex-col gap-space-sm"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Engineering Solutions</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Turnkey Robotic Cells</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Kinematic Motion Tuning</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Machine Vision &amp; QC</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">PLC &amp; SCADA Integration</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Autonomous Mobile Robots</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Hydraulic &amp; Servo Tooling</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Industry Verticals</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Automotive &amp; EV Battery</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Aerospace &amp; Defense</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Semiconductor Cleanrooms</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Pharmaceutical &amp; Bio-Lab</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Heavy Industrial Metallurgy</a></li><li><a class="hover:text-primary transition-colors" data-path="case-studies" href="#">Client Deployments</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Tech Bulletins &amp; Specs</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive firmware advisories, robotics whitepapers, and kinematic benchmarking releases.</p><form class="flex flex-col gap-space-xs"><input class="w-full px-space-md py-space-sm bg-surface-container border border-outline-variant font-mono-spec-sm text-mono-spec-sm text-on-surface focus:outline-none focus:border-primary" placeholder="engineer@domain.com" type="email"/><button class="w-full py-space-sm bg-surface-container-high hover:bg-primary hover:text-on-primary font-mono-spec-sm text-mono-spec-sm uppercase font-bold text-on-surface border border-outline-variant transition-colors" type="button">Subscribe to Dispatch</button></form><div class="flex flex-col gap-space-xs pt-space-xs"><div class="font-label-caps text-label-caps uppercase text-outline">Global Technical Centers</div><div class="font-mono-spec-sm text-mono-spec-sm text-on-surface">Detroit, MI (HQ) • Stuttgart, DE • Yokohama, JP</div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-mono-spec-sm text-mono-spec-sm"><div class="text-outline">© 2024 Nexus Robotics Systems Group. All rights reserved. System Ver. 4.8.2 // KINEMATICS ENGINE</div><div class="flex flex-wrap items-center gap-space-md"><a class="text-outline hover:text-on-surface transition-colors" href="#">Security Compliance</a><a class="text-outline hover:text-on-surface transition-colors" href="#">ITAR Controls</a><a class="text-outline hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-outline hover:text-on-surface transition-colors" href="#">Terms of Engineering</a></div></div></div></footer><script src="assets/site-global.js"></script>
+</body></html>

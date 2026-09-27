@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"var(--nxc-on-tertiary-fixed-variant)","on-secondary-fixed-variant":"var(--nxc-on-secondary-fixed-variant)","on-secondary-container":"var(--nxc-on-secondary-container)","on-error":"var(--nxc-on-error)","error":"var(--nxc-error)","on-secondary-fixed":"var(--nxc-on-secondary-fixed)","inverse-on-surface":"var(--nxc-inverse-on-surface)","on-error-container":"var(--nxc-on-error-container)","tertiary-fixed-dim":"var(--nxc-tertiary-fixed-dim)","tertiary-fixed":"var(--nxc-tertiary-fixed)","surface-container-high":"var(--nxc-surface-container-high)","outline-variant":"var(--nxc-outline-variant)","primary-container":"var(--nxc-primary-container)","secondary-container":"var(--nxc-secondary-container)","on-surface":"var(--nxc-on-surface)","secondary":"var(--nxc-secondary)","on-tertiary-container":"var(--nxc-on-tertiary-container)","primary-fixed-dim":"var(--nxc-primary-fixed-dim)","surface-container-highest":"var(--nxc-surface-container-highest)","inverse-primary":"var(--nxc-inverse-primary)","surface-tint":"var(--nxc-surface-tint)","primary":"var(--nxc-primary)","tertiary":"var(--nxc-tertiary)","on-primary-container":"var(--nxc-on-primary-container)","surface-variant":"var(--nxc-surface-variant)","surface-container":"var(--nxc-surface-container)","on-tertiary-fixed":"var(--nxc-on-tertiary-fixed)","outline":"var(--nxc-outline)","on-background":"var(--nxc-on-background)","background":"var(--nxc-background)","on-surface-variant":"var(--nxc-on-surface-variant)","tertiary-container":"var(--nxc-tertiary-container)","secondary-fixed":"var(--nxc-secondary-fixed)","surface-container-low":"var(--nxc-surface-container-low)","surface":"var(--nxc-surface)","on-primary-fixed":"var(--nxc-on-primary-fixed)","surface-dim":"var(--nxc-surface-dim)","inverse-surface":"var(--nxc-inverse-surface)","on-tertiary":"var(--nxc-on-tertiary)","on-secondary":"var(--nxc-on-secondary)","secondary-fixed-dim":"var(--nxc-secondary-fixed-dim)","surface-container-lowest":"var(--nxc-surface-container-lowest)","on-primary":"var(--nxc-on-primary)","on-primary-fixed-variant":"var(--nxc-on-primary-fixed-variant)","error-container":"var(--nxc-error-container)","surface-bright":"var(--nxc-surface-bright)","primary-fixed":"var(--nxc-primary-fixed)"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"3rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","gutter-mobile":"0.75rem"},"fontFamily":{"mono-spec-sm":["JetBrains Mono"],"mono-spec-lg":["JetBrains Mono"],"headline-lg-mobile":["Sora"],"display-xl-mobile":["Sora"],"body-md":["Inter"],"headline-sm":["Sora"],"body-lg":["Inter"],"headline-lg":["Sora"],"body-sm":["Inter"],"headline-md":["Sora"],"display-xl":["Sora"],"mono-spec-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"]},"fontSize":{"mono-spec-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"mono-spec-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-xl":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"mono-spec-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"500"}],"label-caps":["10px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"700"}]}}}}</script><link href="assets/site-global.css" rel="stylesheet"/>
+
+
+<link rel="icon" type="image/png" href="assets/favicon-dark.png"/>
+</head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant"><div class="h-20 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-md group" data-path="home-automation-projects" href="#"><img alt="Nexus Robotics Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSfUKwrmYyvHZq5SISwmcQhwwjD0mudNku996G5Fpbq5D_titFIcxjk-Rkby9ntmafEzJ65rwkMvUqYTq4AG4LZEwHSWxs7JVkEw0HTymLhXul2BRFin8pFqInXx3debuvlX4Gotp6zqwGUbNwc8ZVm8ZLgrcsuQ9roe9HvgJRWvM8vT52B4MIXLd70zgxUFdNsXz-h8ODVfN2eQMkcBpt_OhMSektMmWj_nzevPPhbGTX96A9OaKJwG4V"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors">NEXUS ROBOTICS</span><span class="font-label-caps text-label-caps uppercase text-outline">Precision Automation Systems</span></div></a></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-medium"><div class="relative group"><button class="flex items-center gap-space-xs px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors"><span>Home</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="absolute left-0 top-full hidden group-hover:flex flex-col w-64 bg-surface-container border border-outline-variant shadow-2xl py-space-xs z-50"><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" data-path="home-automation-projects" href="#">Home 1: Automation Projects</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors" data-path="home-turnkey-robotics" href="#">Home 2: Turnkey Robotics</a></div></div><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="case-studies" href="#">Case Studies</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="industries-served" href="#">Industries Served</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="tech-specs-and-lab" href="#">Tech Specs &amp; Lab</a><a class="px-space-md py-space-sm font-mono-spec-sm text-mono-spec-sm uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-and-rfq" href="#">Contact &amp; RFQ</a></nav><div class="flex items-center gap-space-md"><button aria-label="Toggle RTL" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all duration-200 border border-outline-variant/40" id="rtl-toggle" onclick="toggleRTL()" title="Toggle RTL"><span class="material-symbols-outlined text-on-surface-variant text-[18px]" id="rtl-icon">language</span></button><button aria-label="Toggle Theme" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center hover:bg-surface-container-high transition-all duration-200 border border-outline-variant/40" id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme"><span class="material-symbols-outlined text-on-surface-variant text-[18px]" id="theme-icon">dark_mode</span></button><a class="relative inline-flex items-center justify-center px-space-lg py-space-sm bg-primary-container text-on-primary-container font-mono-spec-sm text-mono-spec-sm uppercase font-bold tracking-wider hover:bg-on-surface hover:text-surface-container-lowest transition-all duration-200 border-none" data-path="contact-and-rfq" href="#"><span class="relative z-10">Submit RFQ</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- HERO SECTION WITH TRANSPARENT APP SHELL BLEED -->
+<section class="dark relative w-full -mt-20 pt-28 pb- space-2xl overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPyCMIYUZ66J7f8seSkuhMK_lsomP9uCwXNTdTtTYiqmXd4ucK2F1t7FP2_2RMA_ExhCSALkmaKC8YoRS9gO1cxWecXTzuWzUOw160tb5ucZTSM1KABSwL1ofqvH11QRNFQ06fzBA6_iQifR58mj18SWQNnlgzluy5hmP3kr-DTVaLiMNDvPiLIa2LaUwV4dJai1OLwXFXs0mC1sNLpoSrnr3BeQ_878Bv_Pd-wgrscFe9Ib9Sl1RlMw');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/90 to-surface-container-lowest/60"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-container/10 via-transparent to-transparent"></div>
+<div class="relative max-w-7xl mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-lg">
+<!-- Breadcrumb & Telemetry Ticker -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-outline">
+<span class="text-primary-container">NEXUS</span>
+<span>/</span>
+<span>SYSTEMS</span>
+<span>/</span>
+<span class="text-on-surface">VERTICAL_TAXONOMY // REV 4.8</span>
+</div>
+<div class="flex items-center gap-space-sm px-space-sm py-1 bg-surface-container/80 backdrop-blur-md rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary tracking-widest uppercase">ACTIVE NODES: 6 DOMAINS DEPLOYED</span>
+</div>
+</div>
+<!-- Main Headline Cluster -->
+<div class="max-w-4xl flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm tracking-widest text-primary-container uppercase">
+<span class="material-symbols-outlined text-[14px]">precision_manufacturing</span>
+          SECTOR CAPABILITIES // MISSION-CRITICAL ENVIRONMENTS
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-tight font-bold">
+          Precision Automation Architected for Rigorous Industrial Verticals
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          Deploying high-reliability robotic systems across aerospace cleanrooms, gigafactory battery lines, semiconductor fabrication, sterile pharmaceutical suites, and heavy metallurgy workcells with uncompromising determinism.
+        </p>
+</div>
+<!-- Hero Call-to-Actions & Fast Telemetry Quickstrip -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="px-space-lg py-space-sm bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-bold tracking-wider uppercase shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_28px_rgba(0,240,255,0.7)] transition-all flex items-center gap-space-xs" href="#sector-grid">
+<span>EXPLORE VERTICAL BENCHMARKS</span>
+<span class="material-symbols-outlined text-[18px]">south_east</span>
+</a>
+<a class="px-space-lg py-space-sm bg-surface-container-high text-on-surface hover:text-primary-container font-telemetry-mono-sm text-telemetry-mono-sm font-bold tracking-wider uppercase transition-all flex items-center gap-space-xs shadow-md" href="#compliance-matrix">
+<span class="material-symbols-outlined text-secondary text-[16px]">file_download</span>
+<span>DOWNLOAD INDUSTRY MATRIX [PDF/CSV]</span>
+</a>
+</div>
+<!-- Micro Quick Telemetry Bar -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-md">
+<div class="bg-surface-container/70 backdrop-blur-md p-space-sm rounded shadow-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline block">CYCLE DEFECT TARGET</span>
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-primary font-bold">&lt; 0.00018 PPM</span>
+</div>
+<div class="bg-surface-container/70 backdrop-blur-md p-space-sm rounded shadow-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline block">MAX ACCELERATION</span>
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-secondary font-bold">12.5 G-FORCE</span>
+</div>
+<div class="bg-surface-container/70 backdrop-blur-md p-space-sm rounded shadow-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline block">DETERMINISTIC LATENCY</span>
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-tertiary-fixed-dim font-bold">250 μs LOOP</span>
+</div>
+<div class="bg-surface-container/70 backdrop-blur-md p-space-sm rounded shadow-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline block">GOV COMPLIANCE AUDIT</span>
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-on-surface font-bold">ITAR // AS9100D</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MACRO DEPLOYMENT METRICS RIBBON -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1 -->
+<div class="bg-surface-container p-space-lg rounded flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary-container/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline tracking-wider uppercase">SYS_METRIC // VOL-01</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">precision_manufacturing</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl font-bold text-on-surface tracking-tight group-hover:text-primary-container transition-colors">450+</div>
+<div class="font-headline-sm text-headline-sm text-primary font-semibold mt-1">Active Production Lines</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Fully commissioned robotic workcells operating across 19 global territories under continuous telemetry.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-telemetry-mono-sm text-telemetry-mono-sm text-outline">
+<span>UPTIME VERIFIED</span>
+<span class="text-tertiary-fixed-dim">ONLINE</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container p-space-lg rounded flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary-fixed-dim/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline tracking-wider uppercase">SYS_METRIC // OEE-02</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">query_stats</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl font-bold text-on-surface tracking-tight group-hover:text-tertiary-fixed-dim transition-colors">99.98%</div>
+<div class="font-headline-sm text-headline-sm text-tertiary font-semibold mt-1">Average Line Availability</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Mean Time Between Unplanned Interruption (MTBUI) exceeding 8,400 continuous operation hours.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-telemetry-mono-sm text-telemetry-mono-sm text-outline">
+<span>FAILOVER TARGET</span>
+<span class="text-primary-container">&lt; 14 SEC</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container p-space-lg rounded flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline tracking-wider uppercase">SYS_METRIC // ROI-03</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">currency_exchange</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl font-bold text-on-surface tracking-tight group-hover:text-secondary transition-colors">14.2 Mo</div>
+<div class="font-headline-sm text-headline-sm text-secondary font-semibold mt-1">Mean Payback Cycle</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Calculated based on scrap mitigation, cycle acceleration, and scrap reductions documented by client telemetry.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-telemetry-mono-sm text-telemetry-mono-sm text-outline">
+<span>SCRAP REDUCTION</span>
+<span class="text-secondary">-84.6%</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container p-space-lg rounded flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary-fixed/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline tracking-wider uppercase">SYS_METRIC // SEC-04</span>
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">verified_user</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl font-bold text-on-surface tracking-tight group-hover:text-primary-fixed transition-colors">0 Flags</div>
+<div class="font-headline-sm text-headline-sm text-primary-fixed font-semibold mt-1">ITAR / CFR Audit Violations</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">100% clean-sheet regulatory compliance across defense, medical Class III devices, and pharmaceutical validation.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-telemetry-mono-sm text-telemetry-mono-sm text-outline">
+<span>AUDIT CADENCE</span>
+<span class="text-primary">BI-ANNUAL ZERO-FINDING</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: SECTOR DEEP-DIVES (GRID OF 6 COMPREHENSIVE INDUSTRIAL SECTOR MODULES) -->
+<section class="w-full bg-background py-space-2xl" id="sector-grid">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span>DOMAIN ANALYSIS // SPECIFICATION MATRIX</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold tracking-tight">
+            Engineered For Hostile &amp; High-Tolerance Verticals
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Each vertical features purpose-engineered kinematics, specialized fieldbus interfaces, thermal mitigation, and turnkey digital twin simulation packages.
+        </p>
+</div>
+<!-- 6-Card Mosaic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- CARD 1: Aerospace & Defense -->
+<div class="bg-surface-container p-space-lg rounded shadow-lg flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<!-- Sector Tag & Status -->
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-1 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container font-bold uppercase rounded">
+                SEC_01 // AERO-DEFENSE
+              </span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">ITAR REGISTERED</span>
+</div>
+<!-- Graphic / Visual Header -->
+<div class="relative w-full h-48 rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Industrial robotic arm precisely deburring an aerospace grade titanium turbine casing with high pressure waterjet cutting, neon blue and cyan lighting in an ultra-clean defense laboratory, high tech telemetry overlays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJhOGVLsPgyUNTSbvms_SC2hSoLcXPTOBltTTNJLiXpAKtQFIvRV3dEZ9420_O-tedLsixgffXKt-TlLtU3vSohx88HRSnOTIGAOFwMSanvRTiqsOQrtZdxkXdnndZIsdQ0JwAbRQxmT1VIHZjOltIAF8-zeCqbkAi5GcX4QMAO6zKuhD855I0sfH81E8wgaxj7mQSEP2xaWloXD_D68bxqpCZyon9n83KXVWYryvIovigLHbhe2BBsA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 font-telemetry-mono-sm text-telemetry-mono-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>TOL: ±0.008 mm</span>
+</div>
+</div>
+<!-- Content -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-semibold group-hover:text-primary transition-colors">
+                Aerospace &amp; Defense Systems
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Turnkey integration for high-modulus airframes, supersonic propulsion assemblies, and weapon systems requiring surgical accuracy and closed-loop metrology.
+              </p>
+</div>
+<!-- Core Specs & Features -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Automated Continuous Carbon-Fiber Placement (AFP)</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">5-Axis High-Torque Titanium Milling &amp; Deburring</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Sub-Surface Ultrasonic NDT Multi-Axis Scanners</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">ITAR-Controlled Secure Software Sandbox Environment</span>
+</div>
+</div>
+</div>
+<!-- Bottom Telemetry Card Data -->
+<div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CORE BUS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary font-bold">EtherNet/IP CIP</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">REPEATABILITY</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container font-bold">±0.005 mm</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: Electric Vehicles & Battery -->
+<div class="bg-surface-container p-space-lg rounded shadow-lg flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<!-- Sector Tag & Status -->
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-1 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-secondary font-bold uppercase rounded">
+                SEC_02 // EV-GIGAFACTORY
+              </span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">UL 9540A READY</span>
+</div>
+<!-- Graphic / Visual Header -->
+<div class="relative w-full h-48 rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High speed robotic cells welding prismatic electric vehicle battery modules with electric spark flares and optical monitoring, magenta and cyan reflections across steel chassis plates." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF6Zq2FBG6jPUJRNdN10oQCAdul_zMDKiolXItwAopO-7ymaoWrMg5ANEOg7JFzHTkLCr5mtlzeBMQj-4ALKrriiv_YqotB9vFsQt6Ve9XT0Vl6BUugk4dzsHh26vkhotZpxbBOKfPVNkuVkSiq52Mk5aC1wkXivTX9uM-tTY5l8bfteziGFExZbf-n0LEpWgPdSu6Jfc42CR4JoUqiSlflSG9GxlualyDL4uSYxLNZIAraEzQmqYn9g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 font-telemetry-mono-sm text-telemetry-mono-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>DRY ROOM DEW POINT: -45°C</span>
+</div>
+</div>
+<!-- Content -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-semibold group-hover:text-secondary transition-colors">
+                Electric Vehicles &amp; Battery Assembly
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Rapid battery pack fabrication solutions capable of synchronized high-joule laser busbar welding, thermal adhesive dispensing, and cell stacking.
+              </p>
+</div>
+<!-- Core Specs & Features -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Prismatic &amp; Cylindrical Cell 600 PPM High-Speed Collation</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Galvo Laser Busbar Fusion with Real-Time Melt Pool Mon.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">2-Part Polyurethane Thermal Gap Filler Dispensing</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Thermal Runaway Isolation &amp; Nitrogen Enclosure Purge</span>
+</div>
+</div>
+</div>
+<!-- Bottom Telemetry Card Data -->
+<div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CORE BUS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-secondary font-bold">PROFINET IRT</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">SAFETY CLASS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface font-bold">SIL 3 / PLe</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: Semiconductor & Cleanroom -->
+<div class="bg-surface-container p-space-lg rounded shadow-lg flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<!-- Sector Tag & Status -->
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-1 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim font-bold uppercase rounded">
+                SEC_03 // SEMI-CLEANROOM
+              </span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">ISO CLASS 1-4</span>
+</div>
+<!-- Graphic / Visual Header -->
+<div class="relative w-full h-48 rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ultra clean semiconductor fabrication lab with specialized white robotic arms transferring a 300mm silicon wafer using vacuum end effectors under monochromatic cleanroom emerald lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADfwmZOjZVUuAI9zb7_aAFGGHMO3kF6F8N28ccsMroTpCQ612GTyJ4M-h07MRnbRZuHGl7KjFV3gek0NROO-ZcPN02YCLxLpLmxvgsiX1rGhsYmEEDwH4NhKr73Ep_Gzt97fA0hJ8_YMNDTTdnxCYEoTbMaSR58t0YpMixZl_5hHHsmJLo7opVpIf5KSRFxCAbtdj_wlkO7b7jh_4rpqlHJFPHX9g6WWO4UAXnhHPbktCYYFwld3PvzQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 font-telemetry-mono-sm text-telemetry-mono-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded text-tertiary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>PARTICULATE: &lt; 0.1 μm / m³</span>
+</div>
+</div>
+<!-- Content -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-semibold group-hover:text-tertiary-fixed-dim transition-colors">
+                Semiconductor &amp; Cleanroom
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Zero-particle generation manipulator arms for 200mm/300mm wafer transfer, FOUP loading, and precision chemical etching chambers.
+              </p>
+</div>
+<!-- Core Specs & Features -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">ISO Class 1 Certified Arm Kinetics with Internal Vacuum Exhaust</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Dissipative ESD-Safe Carbon PEEK End-of-Arm Tools</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Non-Contact Bernoulli Wafer Handling End-Effectors</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">SEMI S2 / S8 Ergonomics and Environmental Compliance</span>
+</div>
+</div>
+</div>
+<!-- Bottom Telemetry Card Data -->
+<div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CORE BUS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim font-bold">EtherCAT</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">REPEATABILITY</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary font-bold">±0.001 mm</span>
+</div>
+</div>
+</div>
+<!-- CARD 4: Medical Devices & Life Sciences -->
+<div class="bg-surface-container p-space-lg rounded shadow-lg flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<!-- Sector Tag & Status -->
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-1 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-primary-fixed-dim font-bold uppercase rounded">
+                SEC_04 // PHARMA-MEDTECH
+              </span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">21 CFR PART 11</span>
+</div>
+<!-- Graphic / Visual Header -->
+<div class="relative w-full h-48 rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pharmaceutical clean packaging automation system, robotic arm assembling surgical tools inside a sterile laminar flow glass cabinet with ultraviolet sterilization glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7iCLyesSRsBWytDs4B-TPmCQRfkzbmqKlKR0_P83lUFyYrCldnJpEQLY511KBcO5K9x2rRSr-weYTOXked7yVxkWEwVHkbj7Ic91FD3DuNZUw3ZtPkTJOcfv-dO2Me7L22dJ3G2Wm7bVbNZL0YnbC_lqO4zeu3bVubF1EPOoO6LSMni4etje2ryNlow5Oa-p_noxUkRE5WPZzj1U7qYysI0gTbBRjz6g6vSo0hfe4ul0K_6Ks4MqNVg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 font-telemetry-mono-sm text-telemetry-mono-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded text-primary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim"></span>
+<span>STERILITY ASSURANCE LEVEL 10⁻⁶</span>
+</div>
+</div>
+<!-- Content -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-semibold group-hover:text-primary-fixed-dim transition-colors">
+                Medical Devices &amp; Life Sciences
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Sterile automation for implant manufacturing, catheter extrusion, high-throughput assay handling, and blister pack micro-welding.
+              </p>
+</div>
+<!-- Core Specs & Features -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">GAMP 5 Category 4/5 Software Validation Workflows</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Micro-Liter Fluid Dispensing for Reagent Chemistry</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">High-Precision Orthopedic Implant Milling &amp; Lapping</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Complete Audit Trail Logging &amp; Electronic Signatures</span>
+</div>
+</div>
+</div>
+<!-- Bottom Telemetry Card Data -->
+<div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CORE BUS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary-fixed-dim font-bold">OPC UA TSN</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">STANDARDS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface font-bold">ISO 13485</span>
+</div>
+</div>
+</div>
+<!-- CARD 5: Heavy Metallurgy & Foundry -->
+<div class="bg-surface-container p-space-lg rounded shadow-lg flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<!-- Sector Tag & Status -->
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-1 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-secondary-container font-bold uppercase rounded text-on-secondary-container">
+                SEC_05 // HEAVY-FOUNDRY
+              </span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">IP67 CAST JACKET</span>
+</div>
+<!-- Graphic / Visual Header -->
+<div class="relative w-full h-48 rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Massive industrial foundry robotic arm pouring molten glowing orange steel into casting molds with thermal blast shields and intense amber sparks reflecting in dark industrial workshop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHFz4pI9c_AbLli-hq4Um0MlgEUxUWBnIWbU-YKgWIeKfqxzeHFkWZPqmzFbcd25j34aXgsMpLXYnHCc67gVX2ys7s2MPg74bfxsJblLNbP3OnG2J4V_uGG8B4iYzv7wgtdSKAPWoMQ8b97r0n8i8-Ki2wu36bZAEWkG8R2xgTerbXL3SrtQC24sPo8Nmd2m1vbQZdzBrw49OjDWC4Xx1d8ZeyhhXGvulJQMjXVvaWZeqqaMuKU3t3bw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 font-telemetry-mono-sm text-telemetry-mono-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded text-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span>FURNACE AMBIENT: 1400°C</span>
+</div>
+</div>
+<!-- Content -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-semibold group-hover:text-secondary-fixed transition-colors">
+                Heavy Metallurgy &amp; Foundry
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Ruggedized kinetic platforms for high-temperature slag skimming, cast iron deburring, forged billet handling, and continuous ingot pouring.
+              </p>
+</div>
+<!-- Core Specs & Features -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">600kg+ Heavy-Payload Arm Configurations</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Active Anti-Slosh Fluid Kinematic Pouring Algorithms</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Pressurized Ceramic Thermal Insulating Arm Enclosures</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed-dim shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">High-Impact Hydraulic Clamping &amp; Extraction Tools</span>
+</div>
+</div>
+</div>
+<!-- Bottom Telemetry Card Data -->
+<div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CORE BUS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-secondary-fixed font-bold">Modbus TCP / DeviceNet</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">ARM PAYLOAD</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface font-bold">1200 KG PEAK</span>
+</div>
+</div>
+</div>
+<!-- CARD 6: Food & Cold Chain Automation -->
+<div class="bg-surface-container p-space-lg rounded shadow-lg flex flex-col justify-between group hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-md">
+<!-- Sector Tag & Status -->
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-1 bg-surface-container-highest font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary font-bold uppercase rounded">
+                SEC_06 // FOOD-COLDCHAIN
+              </span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">IP69K RATED</span>
+</div>
+<!-- Graphic / Visual Header -->
+<div class="relative w-full h-48 rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High speed delta pick and place robots sorting frozen packaged foods on stainless steel conveyors inside a cryogenic sub zero industrial warehouse with cool white and cyan reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxmvH7hP1TFrUtVcrhoYos9glHkugQAFmRidNGZyzsL0KDkMYgjTfCPIgENWgYQOirC0mMHeNlPVGnyxOqmcMp2tKswVFOSubjhvhSzPEEf_75hYucT_62PpC1v5F26bQ-q0XHgxW9iLoTvOTkdqWqutNZ7VGJeBRxmjnAhl-N-Ohtq-XC-z01SSK_EbAc7wuAevjFkvJusVjofmFYQSG-3Jt_5DgVVBTZKQxEYsaWdrOtHJijQjAPng"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 font-telemetry-mono-sm text-telemetry-mono-sm bg-surface-container-lowest/90 px-space-xs py-0.5 rounded text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>SUB-ZERO TEMP: -30°C SUSTAINED</span>
+</div>
+</div>
+<!-- Content -->
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-semibold group-hover:text-tertiary transition-colors">
+                Food &amp; Cold Chain Automation
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Ultra-hygienic pick-and-pack robotics engineered with 316L stainless housings, USDA 3-A sanitary seals, and cold-rated internal gearing.
+              </p>
+</div>
+<!-- Core Specs & Features -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">IP69K Caustic Chemical High-Pressure Washdown Compliant</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">High-Cycle Carbon Fiber Delta Kinematics (220 picks/min)</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">NSF H1 Food-Grade Lubrication with Zero Outgassing</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary shrink-0 mt-0.5">check_circle</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface">Deep Freeze Cell Operation without Heating Jackets</span>
+</div>
+</div>
+</div>
+<!-- Bottom Telemetry Card Data -->
+<div class="mt-space-lg pt-space-sm bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">CORE BUS</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary font-bold">EtherNet/IP</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">PICK SPEED</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface font-bold">220 CPM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: CROSS-INDUSTRY COMPLIANCE & METROLOGY STANDARDS MATRIX (TECHNICAL COMPARISON) -->
+<section class="w-full bg-surface-container-low py-space-2xl" id="compliance-matrix">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-secondary">
+<span class="w-2 h-2 bg-secondary"></span>
+<span>SECTION 5 // CROSS-INDUSTRY METROLOGY BENCHMARK</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold tracking-tight">
+            Compliance &amp; Metrology Standards Matrix
+          </h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-1 bg-surface-container font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant rounded">
+            FILTER: ALL VERTICALS LOADED
+          </span>
+<button class="px-space-md py-1 bg-primary text-on-primary font-telemetry-mono-sm text-telemetry-mono-sm font-bold uppercase rounded shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-colors" id="matrix-export-btn">
+            RAW JSON
+          </button>
+</div>
+</div>
+<!-- Tabular Comparison Container -->
+<div class="w-full overflow-x-auto bg-surface-container rounded shadow-xl">
+<table class="w-full text-left font-body-sm text-body-sm min-w-[900px]">
+<!-- Table Header -->
+<thead class="bg-surface-container-highest/80 backdrop-blur-md text-on-surface">
+<tr class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline tracking-wider uppercase">
+<th class="py-space-md px-space-lg text-primary-container" scope="col">Industrial Sector</th>
+<th class="py-space-md px-space-md" scope="col">Core Standard</th>
+<th class="py-space-md px-space-md" scope="col">Cleanliness / Enclosure</th>
+<th class="py-space-md px-space-md" scope="col">Safety Classification</th>
+<th class="py-space-md px-space-md text-primary-fixed" scope="col">Metrology Precision</th>
+<th class="py-space-md px-space-lg" scope="col">Fieldbus Protocol</th>
+</tr>
+</thead>
+<!-- Table Body -->
+<tbody class="divide-y divide-outline-variant/20">
+<!-- Row 1: Aerospace -->
+<tr class="hover:bg-surface-container-high/60 transition-colors">
+<td class="py-space-md px-space-lg font-headline-sm text-body-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Aerospace &amp; Defense</span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-code text-telemetry-code text-on-surface">
+                AS9100D // ITAR 120.5
+              </td>
+<td class="py-space-md px-space-md font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">
+                ISO Class 6 (Class 1,000)
+              </td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim rounded">
+                  RIA 15.06 Cat 4
+                </span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-mono-lg text-telemetry-mono-lg font-bold text-primary">
+                ±0.008 mm
+              </td>
+<td class="py-space-md px-space-lg font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">
+                EtherNet/IP CIP Safety
+              </td>
+</tr>
+<!-- Row 2: EV Battery -->
+<tr class="hover:bg-surface-container-high/60 transition-colors">
+<td class="py-space-md px-space-lg font-headline-sm text-body-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>EV &amp; Battery Assembly</span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-code text-telemetry-code text-on-surface">
+                ISO 26262 / UL 9540A
+              </td>
+<td class="py-space-md px-space-md font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">
+                IP67 Ingress (Dry-room &lt;1% RH)
+              </td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest font-telemetry-mono-sm text-telemetry-mono-sm text-secondary rounded">
+                  SIL 3 / PLe Dual Channel
+                </span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-mono-lg text-telemetry-mono-lg font-bold text-secondary">
+                ±0.015 mm
+              </td>
+<td class="py-space-md px-space-lg font-telemetry-mono-sm text-telemetry-mono-sm text-secondary-fixed">
+                PROFINET IRT (Isochronous)
+              </td>
+</tr>
+<!-- Row 3: Semiconductor -->
+<tr class="hover:bg-surface-container-high/60 transition-colors">
+<td class="py-space-md px-space-lg font-headline-sm text-body-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Semiconductor Cleanroom</span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-code text-telemetry-code text-on-surface">
+                SEMI S2 / S8 / CE
+              </td>
+<td class="py-space-md px-space-md font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">
+                ISO Class 1 to 3 Cleanroom
+              </td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed rounded">
+                  Interlocked Dual-Zone
+                </span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-mono-lg text-telemetry-mono-lg font-bold text-tertiary-fixed-dim">
+                ±0.001 mm (Sub-Micron)
+              </td>
+<td class="py-space-md px-space-lg font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed">
+                EtherCAT Deterministic
+              </td>
+</tr>
+<!-- Row 4: Medical / Pharma -->
+<tr class="hover:bg-surface-container-high/60 transition-colors">
+<td class="py-space-md px-space-lg font-headline-sm text-body-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<span>Medical Devices &amp; Pharma</span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-code text-telemetry-code text-on-surface">
+                21 CFR Part 11 / GAMP 5
+              </td>
+<td class="py-space-md px-space-md font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">
+                ISO 14644 Class 5 Sterility
+              </td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest font-telemetry-mono-sm text-telemetry-mono-sm text-primary-fixed rounded">
+                  Fail-Safe Closed E-Stop
+                </span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-mono-lg text-telemetry-mono-lg font-bold text-primary-fixed">
+                ±0.005 mm
+              </td>
+<td class="py-space-md px-space-lg font-telemetry-mono-sm text-telemetry-mono-sm text-primary-fixed-dim">
+                OPC UA TSN / Modbus
+              </td>
+</tr>
+<!-- Row 5: Heavy Metallurgy -->
+<tr class="hover:bg-surface-container-high/60 transition-colors">
+<td class="py-space-md px-space-lg font-headline-sm text-body-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>Heavy Metallurgy &amp; Foundry</span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-code text-telemetry-code text-on-surface">
+                NFPA 79 / ISO 13849
+              </td>
+<td class="py-space-md px-space-md font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant">
+                IP67 Thermal Ceramic Cast-Jacket
+              </td>
+<td class="py-space-md px-space-md">
+<span class="px-space-xs py-0.5 bg-surface-container-lowest font-telemetry-mono-sm text-telemetry-mono-sm text-secondary-container rounded text-on-secondary-container">
+                  Zone Scanner Laser Array
+                </span>
+</td>
+<td class="py-space-md px-space-md font-telemetry-mono-lg text-telemetry-mono-lg font-bold text-secondary-fixed">
+                ±0.050 mm
+              </td>
+<td class="py-space-md px-space-lg font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface">
+                DeviceNet / Modbus TCP
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Matrix Footnote & Interactive Live Visualizer -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<div class="bg-surface-container p-space-md rounded flex items-center gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[28px] shrink-0">speed</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">Deterministic Refresh Loops</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All fieldbuses clock sub-millisecond sync cycles for servo axes.</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded flex items-center gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[28px] shrink-0">verified</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">Independent Metrology Certification</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validation performed via NIST-traceable laser tracker arms.</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded flex items-center gap-space-md shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] shrink-0">security</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">Zero Data Outflow Sandbox</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Air-gapped telemetry modules meet strict defense ITAR standards.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE SECTION: ARCHITECTURAL WORKCELL CONFIGURATOR HIGHLIGHT -->
+<section class="w-full bg-background py-space-2xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-container-high rounded-xl p-space-xl relative overflow-hidden shadow-2xl">
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">
+<span class="w-2 h-2 bg-primary-container animate-pulse"></span>
+<span>CELL_TOPOLOGY // SIMULATION ENGINE</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold tracking-tight">
+              Pre-Commissioning Digital Twin Simulation
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Every vertical deployment undergoes 1,000+ virtual shift cycles prior to floor arrival. Kinematic collisions, envelope singularities, and payload inertia are eliminated before steel touches your concrete.
+            </p>
+<!-- Diagnostic Status Grid -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline block">CYCLE ACCURACY</span>
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-primary font-bold">99.998%</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline block">COLLISION RISKS</span>
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-tertiary-fixed-dim font-bold">0 DETECTED</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline block">PLC CODE GENERATION</span>
+<span class="font-telemetry-mono-lg text-telemetry-mono-lg text-secondary font-bold">100% IEC 61131</span>
+</div>
+</div>
+</div>
+<!-- SVG Kinematic Visualizer Graphic -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-md rounded shadow-inner flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-outline">KINEMATIC_ENVELOPE.SIM</span>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">6-AXIS REALTIME</span>
+</div>
+<!-- Inline SVG Chart: Reach & Joint Deflection Map -->
+<div class="w-full h-48 bg-surface-container rounded flex items-center justify-center p-2 relative overflow-hidden">
+<svg class="w-full h-full text-primary-container" fill="none" viewbox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+<!-- Concentric Radial Grid -->
+<circle cx="150" cy="140" r="120" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.1"></circle>
+<circle cx="150" cy="140" r="90" stroke="currentColor" stroke-opacity="0.15"></circle>
+<circle cx="150" cy="140" r="60" stroke="currentColor" stroke-opacity="0.2"></circle>
+<circle cx="150" cy="140" r="30" stroke="currentColor" stroke-opacity="0.3"></circle>
+<line stroke="currentColor" stroke-opacity="0.2" x1="30" x2="270" y1="140" y2="140"></line>
+<line stroke="currentColor" stroke-opacity="0.2" x1="150" x2="150" y1="20" y2="140"></line>
+<!-- Dynamic Kinematic Link Points -->
+<path d="M 150 140 L 120 85 L 180 50 L 210 25" stroke="#00f0ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Envelope Safe Polygon -->
+<polygon fill="rgba(0, 240, 255, 0.08)" points="120,85 180,50 210,25 240,60 190,110 150,140" stroke="#00f0ff" stroke-dasharray="2 2" stroke-width="1"></polygon>
+<!-- Joints -->
+<circle cx="150" cy="140" fill="#dfe2ef" r="5"></circle>
+<circle cx="120" cy="85" fill="#00f0ff" r="4"></circle>
+<circle cx="180" cy="50" fill="#00f0ff" r="4"></circle>
+<circle cx="210" cy="25" fill="#ff2d78" r="5"></circle>
+<!-- Laser Target Ray -->
+<line stroke="#ff2d78" stroke-dasharray="3 3" stroke-width="1.5" x1="210" x2="245" y1="25" y2="5"></line>
+<circle cx="245" cy="5" fill="#ff2d78" r="3"></circle>
+</svg>
+<div class="absolute bottom-1 right-2 font-telemetry-mono-sm text-telemetry-mono-sm text-secondary">
+                TCP TARGET: [X: 842.1, Y: -12.4, Z: 1042.8]
+              </div>
+</div>
+<!-- Joint Angular Values -->
+<div class="grid grid-cols-3 gap-1 font-telemetry-mono-sm text-telemetry-mono-sm text-center">
+<div class="bg-surface-container py-1 rounded text-on-surface">J1: <span class="text-primary-container">+45.2°</span></div>
+<div class="bg-surface-container py-1 rounded text-on-surface">J2: <span class="text-primary-container">-18.4°</span></div>
+<div class="bg-surface-container py-1 rounded text-on-surface">J3: <span class="text-secondary">+92.1°</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: TECHNICAL CONSULTATION & VERTICAL RFQ FORM -->
+<section class="w-full bg-surface-container-low py-space-2xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Context & Contact Protocol -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs font-telemetry-mono-sm text-telemetry-mono-sm text-primary-container">
+<span class="w-2 h-2 bg-primary-container"></span>
+<span>SECTOR SPECIALIZATION // DIRECT DISPATCH</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase font-bold tracking-tight">
+              Schedule a Sector Engineering Review
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Connect directly with our Sector Solutions Lead. We provide feasibility evaluations, reach-study simulations, and deterministic cycle-time analysis under NDA within 48 hours.
+            </p>
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface block">Bilateral NDA Standard</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ITAR and Proprietary CAD/CAM data strictly contained.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</span>
+<div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface block">48-Hour Feasibility Study</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Initial robot payload and kinematic assessment turnaround.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</span>
+<div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface block">Direct Principal Access</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Discuss specs directly with Senior Robotics Systems Integrators.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md font-telemetry-mono-sm text-telemetry-mono-sm text-outline flex items-center justify-between">
+<span>SECURE PROTOCOL: AES-256</span>
+<span>NODE DETROIT [HQ-NORTH]</span>
+</div>
+</div>
+<!-- Right Column: Interactive Intake Protocol Form -->
+<div class="lg:col-span-7 bg-surface-container p-space-xl rounded shadow-xl">
+<form class="flex flex-col gap-space-md" id="vertical-rfq-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary tracking-wider uppercase" for="rfq-name">
+                  Lead Engineer / Executive
+                </label>
+<input class="bg-surface-container-lowest px-space-md py-space-sm rounded font-telemetry-code text-telemetry-code text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" id="rfq-name" placeholder="DR. H. VANCE" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary tracking-wider uppercase" for="rfq-email">
+                  Secure Enterprise Email
+                </label>
+<input class="bg-surface-container-lowest px-space-md py-space-sm rounded font-telemetry-code text-telemetry-code text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" id="rfq-email" placeholder="H.VANCE@DEFENSE-CORP.AERO" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary tracking-wider uppercase" for="rfq-sector">
+                  Target Sector Vertical
+                </label>
+<select class="bg-surface-container-lowest px-space-md py-space-sm rounded font-telemetry-code text-telemetry-code text-on-surface focus:outline-none focus:bg-surface-container-highest transition-colors" id="rfq-sector">
+<option value="aerospace">Aerospace &amp; Defense (AS9100D/ITAR)</option>
+<option value="ev-battery">EV &amp; Battery Assembly (Dry-Room)</option>
+<option value="semiconductor">Semiconductor Cleanroom (ISO 1-4)</option>
+<option value="medical">Medical Devices &amp; Pharma (21 CFR)</option>
+<option value="metallurgy">Heavy Metallurgy &amp; Foundry (High-Temp)</option>
+<option value="food">Food &amp; Cold Chain (IP69K Washdown)</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary tracking-wider uppercase" for="rfq-tolerance">
+                  Required Precision Envelope
+                </label>
+<select class="bg-surface-container-lowest px-space-md py-space-sm rounded font-telemetry-code text-telemetry-code text-on-surface focus:outline-none focus:bg-surface-container-highest transition-colors" id="rfq-tolerance">
+<option value="submicron">&lt; ±0.001 mm (Sub-Micron Semiconductor)</option>
+<option value="high-precision">±0.005 mm to ±0.010 mm (Aerospace/Med)</option>
+<option value="standard">±0.015 mm to ±0.030 mm (Automotive/EV)</option>
+<option value="heavy">±0.050 mm+ (Heavy Machining/Foundry)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-telemetry-mono-sm text-telemetry-mono-sm text-primary tracking-wider uppercase" for="rfq-specs">
+                Process Parameters &amp; Kinematic Requirements
+              </label>
+<textarea class="bg-surface-container-lowest px-space-md py-space-sm rounded font-telemetry-code text-telemetry-code text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-highest transition-colors" id="rfq-specs" placeholder="Specify payload weight, cycle time target, envelope dimensions, cleanroom class, or existing PLC architecture (e.g., Rockwell GuardLogix, Siemens S7-1500F)..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<input checked="" class="w-4 h-4 rounded bg-surface-container-lowest accent-primary-container cursor-pointer" id="rfq-nda" type="checkbox"/>
+<label class="font-telemetry-mono-sm text-telemetry-mono-sm text-on-surface-variant cursor-pointer" for="rfq-nda">
+                Generate mutual NDA document before transferring engineering CAD models.
+              </label>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm">
+<button class="px-space-xl py-space-sm bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-bold tracking-wider uppercase shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_28px_rgba(0,240,255,0.7)] transition-all flex items-center gap-space-xs" type="submit">
+<span>INITIALIZE TECHNICAL CONSULT</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<span class="font-telemetry-mono-sm text-telemetry-mono-sm text-tertiary-fixed-dim">
+                DISPATCH TIME: IMMEDIATE // T-0
+              </span>
+</div>
+<div class="hidden p-space-sm bg-tertiary/10 text-tertiary font-telemetry-mono-sm text-telemetry-mono-sm rounded text-center" id="rfq-notification">
+              [DISPATCH CONFIRMED] Engineering packet received. Lead Integrator assignment in progress.
+            </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interaction for JSON export button & consultation form submission
+  document.getElementById('matrix-export-btn')?.addEventListener('click', function() {
+    const matrixData = {
+      aerospace: { standard: 'AS9100D', clean: 'ISO Class 6', safety: 'RIA 15.06 Cat 4', tol: '±0.008mm', bus: 'EtherNet/IP' },
+      ev_battery: { standard: 'ISO 26262', clean: 'IP67 Dry-room', safety: 'SIL 3 PLe', tol: '±0.015mm', bus: 'PROFINET IRT' },
+      semiconductor: { standard: 'SEMI S2/S8', clean: 'ISO Class 1-3', safety: 'Interlocked', tol: '±0.001mm', bus: 'EtherCAT' },
+      medical: { standard: '21 CFR Part 11', clean: 'ISO 14644 Class 5', safety: 'Fail-safe', tol: '±0.005mm', bus: 'OPC UA TSN' },
+      metallurgy: { standard: 'NFPA 79', clean: 'IP67 Cast-jacket', safety: 'Zone Scanner', tol: '±0.050mm', bus: 'Modbus TCP' }
+    };
+    const blob = new Blob([JSON.stringify(matrixData, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'nexus_vertical_compliance_matrix.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById('vertical-rfq-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const notification = document.getElementById('rfq-notification');
+    if (notification) {
+      notification.classList.remove('hidden');
+      setTimeout(() => {
+        notification.classList.add('hidden');
+      }, 5000);
+    }
+  });
+</script></main><footer class="dark w-full bg-surface-container-lowest border-t border-outline-variant text-on-surface-variant"><div class="w-full px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl border-b border-outline-variant/60"><div class="lg:col-span-2 flex flex-col gap-space-md"><a class="flex items-center gap-space-sm group hover:opacity-80 transition-opacity" data-path="home-automation-projects" href="#"><img alt="Nexus Robotics Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSfUKwrmYyvHZq5SISwmcQhwwjD0mudNku996G5Fpbq5D_titFIcxjk-Rkby9ntmafEzJ65rwkMvUqYTq4AG4LZEwHSWxs7JVkEw0HTymLhXul2BRFin8pFqInXx3debuvlX4Gotp6zqwGUbNwc8ZVm8ZLgrcsuQ9roe9HvgJRWvM8vT52B4MIXLd70zgxUFdNsXz-h8ODVfN2eQMkcBpt_OhMSektMmWj_nzevPPhbGTX96A9OaKJwG4V"/><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">NEXUS ROBOTICS</span></a><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Premier industrial robotics and automation systems integrator. Delivering sub-millimeter precision kinematic platforms, cell-level automation, and full-scale factory deployments worldwide.</p>
+<div class="flex items-center gap-space-md pt-space-md">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="LinkedIn">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="X (Twitter)">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="GitHub">
+<svg fill="currentColor" height="18" viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 border border-outline-variant/50 hover:border-primary shadow-lg" href="#" aria-label="YouTube">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+</div><div class="flex flex-wrap gap-space-sm pt-space-xs"><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-primary">ISO 9001:2015</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-primary">RIA CERTIFIED INTEGRATOR</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-on-surface">CE MARK COMPLIANT</span></div><div class="px-space-sm py-space-xs bg-surface-container-low border border-outline-variant"><span class="font-label-caps text-label-caps uppercase text-secondary">ITAR REGISTERED</span></div></div><div class="mt-space-sm p-space-md bg-surface-container-low border border-outline-variant/80"><div class="font-label-caps text-label-caps uppercase text-outline">Emergency Engineering Hotline &amp; Dispatch</div><div class="font-mono-spec-lg text-mono-spec-lg text-secondary font-bold mt-space-xs">+1 (800) 555-ROBOT</div><div class="font-mono-spec-sm text-mono-spec-sm text-on-surface-variant">24/7/365 On-Call Kinematic Telemetry Dispatch</div></div></div><div class="flex flex-col gap-space-sm"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Engineering Solutions</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Turnkey Robotic Cells</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Kinematic Motion Tuning</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Machine Vision &amp; QC</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">PLC &amp; SCADA Integration</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Autonomous Mobile Robots</a></li><li><a class="hover:text-primary transition-colors" data-path="services" href="#">Hydraulic &amp; Servo Tooling</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Industry Verticals</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Automotive &amp; EV Battery</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Aerospace &amp; Defense</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Semiconductor Cleanrooms</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Pharmaceutical &amp; Bio-Lab</a></li><li><a class="hover:text-primary transition-colors" data-path="industries-served" href="#">Heavy Industrial Metallurgy</a></li><li><a class="hover:text-primary transition-colors" data-path="case-studies" href="#">Client Deployments</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-mono-spec-sm text-mono-spec-sm font-bold uppercase text-on-surface tracking-wider">Tech Bulletins &amp; Specs</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive firmware advisories, robotics whitepapers, and kinematic benchmarking releases.</p><form class="flex flex-col gap-space-xs"><input class="w-full px-space-md py-space-sm bg-surface-container border border-outline-variant font-mono-spec-sm text-mono-spec-sm text-on-surface focus:outline-none focus:border-primary" placeholder="engineer@domain.com" type="email"/><button class="w-full py-space-sm bg-surface-container-high hover:bg-primary hover:text-on-primary font-mono-spec-sm text-mono-spec-sm uppercase font-bold text-on-surface border border-outline-variant transition-colors" type="button">Subscribe to Dispatch</button></form><div class="flex flex-col gap-space-xs pt-space-xs"><div class="font-label-caps text-label-caps uppercase text-outline">Global Technical Centers</div><div class="font-mono-spec-sm text-mono-spec-sm text-on-surface">Detroit, MI (HQ) • Stuttgart, DE • Yokohama, JP</div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-mono-spec-sm text-mono-spec-sm"><div class="text-outline">© 2024 Nexus Robotics Systems Group. All rights reserved. System Ver. 4.8.2 // KINEMATICS ENGINE</div><div class="flex flex-wrap items-center gap-space-md"><a class="text-outline hover:text-on-surface transition-colors" href="#">Security Compliance</a><a class="text-outline hover:text-on-surface transition-colors" href="#">ITAR Controls</a><a class="text-outline hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-outline hover:text-on-surface transition-colors" href="#">Terms of Engineering</a></div></div></div></footer><script src="assets/site-global.js"></script>
+</body></html>
