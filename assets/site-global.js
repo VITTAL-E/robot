@@ -40,7 +40,8 @@
    "case-study-detail":"case-study-hyperweld.html",
    "industries-served":"industries.html",
    "tech-specs-and-lab":"tech-specs.html",
-   "contact-and-rfq":"contact.html"
+   "contact-and-rfq":"contact.html",
+   "login":"contact.html"
   };
   document.querySelectorAll('a[href="#"]').forEach(a=>{
    let target=null;
@@ -128,16 +129,70 @@
   }
  };
 
- // Sync icons to current state once DOM is ready
- document.addEventListener("DOMContentLoaded",function(){
+ function highlightNav(){
+  var nav=document.querySelector("header nav");
+  if(!nav)return;
+
+  var raw=window.location.pathname.split("/").pop()||"index.html";
+  var path=(raw.split("?")[0].split("#")[0]||"index.html").toLowerCase();
+  if(!path||path==="")path="index.html";
+
+  // Clear previous active states
+  nav.querySelectorAll(".active,.nav-active,[aria-current='page']").forEach(function(el){
+   el.classList.remove("active","nav-active");
+   el.removeAttribute("aria-current");
+  });
+
+  var homeBtn=nav.querySelector(".group button");
+  var homeDropdown=nav.querySelector(".group .absolute");
+
+  var isHome=(path==="index.html"||path==="home-1-variant-2.html"||path==="home-2.html"||path==="home-2-variant-2.html");
+
+  if(isHome){
+   if(homeBtn){
+    homeBtn.classList.add("active","nav-active");
+    homeBtn.setAttribute("aria-current","page");
+   }
+   if(homeDropdown){
+    var isHome2=path.indexOf("home-2")!==-1;
+    var targetPath=isHome2?"home-turnkey-robotics":"home-automation-projects";
+    var sub=homeDropdown.querySelector('[data-path="'+targetPath+'"]');
+    if(sub){sub.classList.add("active","nav-active");sub.setAttribute("aria-current","page");}
+   }
+  }else if(path.indexOf("service")!==-1){
+   var s=nav.querySelector('a[data-path="services"]');
+   if(s){s.classList.add("active","nav-active");s.setAttribute("aria-current","page");}
+  }else if(path.indexOf("case-stud")!==-1||path.indexOf("hyperweld")!==-1){
+   var c=nav.querySelector('a[data-path="case-studies"]');
+   if(c){c.classList.add("active","nav-active");c.setAttribute("aria-current","page");}
+  }else if(path.indexOf("industr")!==-1){
+   var ind=nav.querySelector('a[data-path="industries-served"]');
+   if(ind){ind.classList.add("active","nav-active");ind.setAttribute("aria-current","page");}
+  }else if(path.indexOf("tech-spec")!==-1){
+   var ts=nav.querySelector('a[data-path="tech-specs-and-lab"]');
+   if(ts){ts.classList.add("active","nav-active");ts.setAttribute("aria-current","page");}
+  }else if(path.indexOf("contact")!==-1){
+   var ct=nav.querySelector('a[data-path="login"], a[data-path="contact-and-rfq"]');
+   if(ct){ct.classList.add("active","nav-active");ct.setAttribute("aria-current","page");}
+  }
+ }
+
+ function init(){
+  var rtlIcon=document.getElementById("rtl-icon");
+  if(rtlIcon)rtlIcon.textContent="language";
+
   var themeIcon=document.getElementById("theme-icon");
   if(themeIcon){
    var saved=localStorage.getItem("nexus-theme");
    themeIcon.textContent=(saved==="light")?"light_mode":"dark_mode";
   }
-  links();forms();
- });
+  links();forms();highlightNav();
+ }
 
+ if(document.readyState==="loading"){
+  document.addEventListener("DOMContentLoaded",init);
+ }else{
+  init();
+ }
 
 })();
-

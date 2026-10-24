@@ -3,6 +3,239 @@
 html{scroll-behavior:smooth}
 body{transition:background-color .3s ease,color .3s ease}
 
+/* ═══ HAMBURGER MENU BUTTON ═══ */
+#hamburger-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  background: transparent;
+  border: 1px solid var(--nxc-outline-variant);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  flex-shrink: 0;
+}
+#hamburger-btn:hover {
+  background: var(--nxc-surface-container-high);
+  border-color: var(--nxc-outline);
+}
+/* 3-bar hamburger icon using spans */
+.hamburger-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--nxc-on-surface);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease, width 0.2s ease;
+  transform-origin: center;
+}
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  pointer-events: none;
+}
+/* Animated X state when menu open */
+#hamburger-btn.is-open .hamburger-bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+#hamburger-btn.is-open .hamburger-bar:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+#hamburger-btn.is-open .hamburger-bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* ═══ MOBILE NAV DRAWER ═══ */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(320px, 85vw);
+  height: 100dvh;
+  background: var(--nxc-surface-container-lowest);
+  border-left: 1px solid var(--nxc-outline-variant);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.25rem;
+  gap: 0.25rem;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+#mobile-nav.is-open {
+  transform: translateX(0);
+}
+/* Mobile nav backdrop overlay */
+#mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 199;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#mobile-nav-backdrop.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Mobile nav header (close + logo) */
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--nxc-outline-variant);
+  margin-bottom: 0.75rem;
+}
+.mobile-nav-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--nxc-outline-variant);
+  background: transparent;
+  cursor: pointer;
+  color: var(--nxc-on-surface-variant);
+  transition: background 0.2s;
+}
+.mobile-nav-close:hover {
+  background: var(--nxc-surface-container-high);
+}
+
+/* Mobile nav links */
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--nxc-on-surface-variant);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.mobile-nav-link:hover {
+  background: var(--nxc-surface-container-high);
+  color: var(--nxc-on-surface);
+}
+.mobile-nav-link.active,
+.mobile-nav-link.nav-active,
+.mobile-nav-link[aria-current="page"] {
+  background: var(--nxc-surface-container-high);
+  color: var(--nxc-primary);
+  font-weight: 600;
+  border-left: 2px solid var(--nxc-primary);
+}
+/* Mobile nav section label */
+.mobile-nav-section {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--nxc-outline);
+  padding: 0.75rem 0.875rem 0.25rem;
+}
+/* Mobile nav submenu items (Home sub-links) */
+.mobile-nav-sublink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.875rem 0.625rem 1.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--nxc-on-surface-variant);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.mobile-nav-sublink:hover {
+  background: var(--nxc-surface-container);
+  color: var(--nxc-primary);
+}
+.mobile-nav-sublink.active,
+.mobile-nav-sublink.nav-active {
+  color: var(--nxc-primary);
+  font-weight: 600;
+}
+
+/* Mobile nav footer CTA */
+.mobile-nav-cta {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--nxc-outline-variant);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Dark mode mobile nav */
+html.dark #mobile-nav {
+  background: #0d0f18;
+  border-color: rgba(59, 73, 75, 0.6);
+}
+html.dark .mobile-nav-header,
+html.dark .mobile-nav-cta {
+  border-color: rgba(59, 73, 75, 0.6);
+}
+html.dark .mobile-nav-link.active,
+html.dark .mobile-nav-link.nav-active,
+html.dark .mobile-nav-link[aria-current="page"] {
+  background: #262a34;
+  color: #85a5ff;
+  border-left-color: #85a5ff;
+}
+html.dark .mobile-nav-link:hover {
+  background: #1a1d29;
+  color: #dfe2ef;
+}
+
+/* ═══ RESPONSIVE: Show hamburger below lg (1024px) ═══ */
+@media (max-width: 1023px) {
+  #hamburger-btn {
+    display: flex;
+  }
+
+  header > div > div:last-child > .header-cta-divider,
+  header > div > div:last-child > .header-cta-divider + a {
+    display: none;
+  }
+}
+
+/* ═══ 1024px ALIGNMENT FIX: ensure header items are vertically centered ═══ */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  header > div {
+    gap: 0.5rem;
+  }
+  header nav {
+    gap: 0;
+  }
+  header nav a,
+  header nav button {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
+
 /* ═══ LIGHT THEME (default) ═══ */
 :root {
   --nxc-background: #f0f2f8;
@@ -143,6 +376,35 @@ header a:hover .text-on-surface-variant {
   color: #dfe2ef !important;
 }
 
+/* ═══ ACTIVE HEADER NAV ITEM HIGHLIGHT ═══ */
+header nav a.active,
+header nav button.active,
+header nav .nav-active,
+header nav a[aria-current="page"],
+header nav button[aria-current="page"] {
+  background-color: #262a34 !important;
+  color: #85a5ff !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid #85a5ff !important;
+  box-shadow: 0 4px 12px -2px rgba(0, 229, 255, 0.15) !important;
+}
+
+header nav a.active .text-on-surface-variant,
+header nav button.active .text-on-surface-variant,
+header nav button.active span {
+  color: #85a5ff !important;
+}
+
+/* Dropdown active item inside Home menu */
+header nav .group .absolute a.active,
+header nav .group .absolute a.nav-active {
+  background-color: #262a34 !important;
+  color: #85a5ff !important;
+  border-left: 2px solid #85a5ff !important;
+  border-bottom: none !important;
+}
+
+
 /* Outline / subtitle text */
 header .text-outline {
   color: #849495 !important;
@@ -192,3 +454,80 @@ header .text-on-primary {
   color: #002171 !important;
 }
 
+/* ═══ HIGH-CONTRAST IMAGE OVERLAYS & HEADINGS (DEPLOYMENT INDEX) ═══ */
+.image-badge-tag {
+  background-color: rgba(10, 14, 23, 0.88) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45) !important;
+}
+
+.image-badge-primary {
+  color: #38bdf8 !important; /* Luminous cyan/sky blue */
+  font-weight: 600 !important;
+}
+
+.image-badge-secondary {
+  color: #fb923c !important; /* Luminous amber/orange */
+  font-weight: 600 !important;
+}
+
+.image-badge-tertiary {
+  color: #34d399 !important; /* Luminous mint/emerald */
+  font-weight: 600 !important;
+}
+
+.image-badge-muted {
+  color: #e2e8f0 !important; /* Crisp light slate */
+  font-weight: 500 !important;
+}
+
+/* ═══ HEADER RTL / THEME TOGGLE — DIVIDER FROM LOGIN CTA ═══ */
+/* Tighten the icon toggles group and separate from Login CTA */
+header > div > div:last-child {
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* Standalone divider span between icon toggles and Login CTA */
+.header-cta-divider {
+  display: inline-block;
+  width: 1px;
+  height: 1.25rem;
+  background-color: var(--nxc-outline-variant);
+  opacity: 0.55;
+  margin: 0 0.375rem;
+  vertical-align: middle;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+/* Place the RTL control at the far-right CTA position in the header. */
+header > div > div:last-child > #theme-toggle {
+  order: 1;
+}
+
+header > div > div:last-child > #rtl-toggle {
+  order: 2;
+}
+
+header > div > div:last-child > .header-cta-divider,
+header > div > div:last-child > a[data-path="login"],
+header > div > div:last-child > a[data-path="contact-and-rfq"] {
+  display: none;
+}
+
+/* Card titles in Deployment Index */
+.case-card h4 {
+  color: var(--nxc-on-surface) !important;
+}
+.case-card:hover h4 {
+  color: var(--nxc-primary) !important;
+}
+html:not(.dark) .case-card h4 {
+  color: #0f172a !important;
+}
+html:not(.dark) .case-card:hover h4 {
+  color: #004ee9 !important;
+}
